@@ -1,0 +1,1817 @@
+[08/29 09:22:42      0s] 
+[08/29 09:22:42      0s] Cadence Tempus(TM) Timing Signoff Solution.
+[08/29 09:22:42      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[08/29 09:22:42      0s] 
+[08/29 09:22:42      0s] Version:	v21.18-s100_1, built Mon Jul 24 10:44:52 PDT 2023
+[08/29 09:22:42      0s] Options:	
+[08/29 09:22:42      0s] Date:		Sat Aug 29 09:22:42 2026
+[08/29 09:22:42      0s] Host:		cad07 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz 6144KB)
+[08/29 09:22:42      0s] OS:		Red Hat Enterprise Linux 8.7 (Ootpa)
+[08/29 09:22:42      0s] 
+[08/29 09:22:42      0s] License:
+[08/29 09:22:42      0s] 		[09:22:42.395673] Configured Lic search path (21.01-s002): 5280@CadenceServer
+
+[08/29 09:22:42      0s] 		tpsxl	Tempus Timing Signoff Solution XL	21.1	checkout succeeded
+[08/29 09:22:42      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[08/29 09:22:54      8s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Signoff Solution v21.18-s100_1 (64bit) 07/24/2023 10:44 (Linux 3.10.0-693.el7.x86_64)
+[08/29 09:23:00     13s] @(#)CDS: NanoRoute 21.18-s100_1 NR230707-1955/21_18-UB (database version 18.20.605) {superthreading v2.17}
+[08/29 09:23:00     13s] @(#)CDS: AAE 21.18-s017 (64bit) 07/24/2023 (Linux 3.10.0-693.el7.x86_64)
+[08/29 09:23:00     13s] @(#)CDS: CTE 21.18-s023_1 () Jul 22 2023 21:47:22 ( )
+[08/29 09:23:00     13s] @(#)CDS: SYNTECH 21.18-s011_1 () Jul 21 2023 10:04:21 ( )
+[08/29 09:23:00     13s] @(#)CDS: CPE v21.18-s054
+[08/29 09:23:00     13s] @(#)CDS: OA 22.60-p087 Thu Feb  9 09:35:26 2023
+[08/29 09:23:00     13s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[08/29 09:23:00     13s] @(#)CDS: RCDB 11.15.0
+[08/29 09:23:00     13s] @(#)CDS: STYLUS 21.12-s019_1 (12/20/2022 05:13 PST)
+[08/29 09:23:00     13s] Change the soft stacksize limit to 0.2%RAM (15 mbytes). Set global soft_stack_size_limit to change the value.
+[08/29 09:23:00     13s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_42686_HM15uv'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_42686_HM15uv'.
+[08/29 09:23:02     14s] Has not load the powerDB, will keep enabled
+[08/29 09:23:02     14s] Has not load the powerDB, will keep enabled
+[08/29 09:25:19     31s] <CMD> read_design -physical_data low_power_soc.enc.dat /low_power_soc
+[08/29 09:25:20     32s] # Tempus Timing Signoff Solution 21.18-s100_1
+[08/29 09:25:20     32s] # read_design
+[08/29 09:25:20     32s] #  -physical_data 1
+[08/29 09:25:20     32s] #  dir low_power_soc.enc.dat /low_power_soc
+[08/29 09:25:20     32s] Set Default Input Pin Transition as 0.1 ps.
+[08/29 09:25:20     32s] Loading design 'low_power_soc' saved by 'Innovus' '21.15-s110_1' on 'Sat Aug 29 09:20:04 2026'.
+[08/29 09:25:20     32s] #% Begin Load MMMC data ... (date=08/29 09:25:20, mem=945.7M)
+[08/29 09:25:20     32s] **WARN: (UI-638):	The option '-cap_table' to the command 'create_rc_corner' is ignored since it is related to the RC extraction mode which Tempus does not support. Tempus only supports the signoff QRC extraction.
+[08/29 09:25:20     32s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[08/29 09:25:20     32s] #% End Load MMMC data ... (date=08/29 09:25:20, total cpu=0:00:00.0, real=0:00:00.0, peak res=945.8M, current mem=945.8M)
+[08/29 09:25:21     32s] 
+[08/29 09:25:21     32s] Loading LEF file /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/libs/lef/gsclib045_tech.lef ...
+[08/29 09:25:21     32s] 
+[08/29 09:25:21     32s] Loading LEF file /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/libs/lef/gsclib045_macro.lef ...
+[08/29 09:25:21     32s] Set DBUPerIGU to M2 pitch 400.
+[08/29 09:25:21     33s] 
+[08/29 09:25:21     33s] Loading LEF file /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/libs/lef/giolib045.lef ...
+[08/29 09:25:21     33s] 
+[08/29 09:25:21     33s] Loading LEF file /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/libs/lef/pdkIO.lef ...
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADI' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'IN' in macro 'PADO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'PAD' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'IN' in macro 'PADIO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'OUT' in macro 'PADIO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED5' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED3' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED10' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VDDPAD25' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VSSPAD' in macro 'padIORINGFEED1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VSS25' in macro 'PADVSS25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'VDD25' in macro 'PADVDD25' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'OEN' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDOZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDOZ' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-200):	Pin 'A' in macro 'PADDO' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDO' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (EMS-62):	Message <IMPLF-200> has exceeded the default message display limit of 20.
+[08/29 09:25:21     33s] To avoid this warning, increase the display limit per unique message by
+[08/29 09:25:21     33s] using the set_message -limit <number> command.
+[08/29 09:25:21     33s] The message limit can be removed by using the set_message -no_limit command.
+[08/29 09:25:21     33s] Note that setting a very large number using the set_message -limit command
+[08/29 09:25:21     33s] or removing the message limit using the set_message -no_limit command can
+[08/29 09:25:21     33s] significantly increase the log file size.
+[08/29 09:25:21     33s] To suppress a message, use the set_message -suppress command.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDI' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] **WARN: (IMPLF-201):	Pin 'PAD' in macro 'PADDB' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[08/29 09:25:21     33s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[08/29 09:25:21     33s] Loading view definition file from /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/viewDefinition.tcl
+[08/29 09:25:21     33s] Reading slow timing library '/home/kite/Desktop/jakir/45nm_Library/lib/slow_vdd1v0_basicCells.lib' ...
+[08/29 09:25:21     33s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir/45nm_Library/lib/slow_vdd1v0_basicCells.lib)
+[08/29 09:25:21     33s] Read 480 cells in library 'slow_vdd1v0' 
+[08/29 09:25:21     33s] Reading fast timing library '/home/kite/Desktop/jakir/45nm_Library/lib/fast_vdd1v0_basicCells.lib' ...
+[08/29 09:25:22     33s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/kite/Desktop/jakir/45nm_Library/lib/fast_vdd1v0_basicCells.lib)
+[08/29 09:25:22     33s] Read 480 cells in library 'fast_vdd1v0' 
+[08/29 09:25:22     33s] Ending "PreSetAnalysisView" (total cpu=0:00:00.8, real=0:00:01.0, peak res=1055.8M, current mem=1010.2M)
+[08/29 09:25:22     33s] *** End library_loading (cpu=0.01min, real=0.02min, mem=34.9M, fe_cpu=0.56min, fe_real=2.67min, fe_mem=1029.1M) ***
+[08/29 09:25:22     33s] #% Begin Load netlist data ... (date=08/29 09:25:22, mem=1009.6M)
+[08/29 09:25:22     34s] *** Begin netlist parsing (mem=1029.1M) ***
+[08/29 09:25:22     34s] Reading verilogBinary netlist '/home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/low_power_soc.v.bin'
+[08/29 09:25:22     34s] 
+[08/29 09:25:22     34s] *** Memory Usage v#1 (Current mem = 1179.148M, initial mem = 481.699M) ***
+[08/29 09:25:22     34s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1179.1M) ***
+[08/29 09:25:22     34s] #% End Load netlist data ... (date=08/29 09:25:22, total cpu=0:00:00.4, real=0:00:00.0, peak res=1109.0M, current mem=1098.8M)
+[08/29 09:25:22     34s] Top level cell is low_power_soc.
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1136.5M, current mem=1136.5M)
+[08/29 09:25:22     34s] Building hierarchical netlist for Cell low_power_soc ...
+[08/29 09:25:22     34s] ***** UseNewTieNetMode *****.
+[08/29 09:25:22     34s] *** Netlist is unique.
+[08/29 09:25:22     34s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[08/29 09:25:22     34s] ** info: there are 1080 modules.
+[08/29 09:25:22     34s] ** info: there are 34 stdCell insts.
+[08/29 09:25:22     34s] ** info: there are 20 Pad insts.
+[08/29 09:25:22     34s] 
+[08/29 09:25:22     34s] *** Memory Usage v#1 (Current mem = 1533.594M, initial mem = 481.699M) ***
+[08/29 09:25:22     34s] *info: set bottom ioPad orient R0
+[08/29 09:25:22     34s] Reading IO assignment file "/home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/libs/iofile/soccon.io" ...
+[08/29 09:25:22     34s] **WARN: (IMPFP-3961):	The techSite 'Corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/29 09:25:22     34s] **WARN: (IMPFP-3961):	The techSite 'Pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/29 09:25:22     34s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/29 09:25:22     34s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/29 09:25:22     34s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/29 09:25:22     34s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[08/29 09:25:22     34s] Start create_tracks
+[08/29 09:25:22     34s] Set Default Input Pin Transition as 0.1 ps.
+[08/29 09:25:22     34s] Set Shrink Factor to 0.90000
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] Loading preference file /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/gui.pref.tcl ...
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'MinFPModuleSize' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'MinFlightLineWidth' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'MaxFlightLineNetTerms' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'LevelFlight' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'DirectionSink' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'DirectionSource' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'ShowNumberBlockConnection' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'StrecthRestriction' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'StretchRectilinear' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'MoveRestriction' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'DisplayRelFPlan' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'LegalizeMacro' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'DisplayFPlanFlightLine' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'DisplayPinName' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'ExclusiveFlight' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'ShowToUnplace' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'FlightLineInMove' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'ShowConnectionInOutNumber' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'ConnectionColorType' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (UI-156):	preference name 'OnlyBundleNetFlight' is not supported in Tempus Timing Signoff Solution.
+[08/29 09:25:22     34s] **WARN: (EMS-27):	Message (UI-156) has exceeded the current message display limit of 20.
+[08/29 09:25:22     34s] To increase the message display limit, refer to the product command reference manual.
+[08/29 09:25:22     34s] **WARN: (IMPSYC-6134):	Setting analysis mode to setup does not have any impact on timing analysis as simultaneous setup/hold mode analysis is on. Use '-late' option to report setup timing reports.
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] Has not load the powerDB, will keep enabled
+[08/29 09:25:22     34s] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[08/29 09:25:22     34s] #WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+[08/29 09:25:22     34s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[08/29 09:25:22     34s] AAE_INFO: switching -siAware from false to true ...
+[08/29 09:25:22     34s] AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+[08/29 09:25:22     34s] addRing command will ignore shorts while creating rings.
+[08/29 09:25:22     34s] addRing command will disallow rings to go over rows.
+[08/29 09:25:22     34s] addRing command will consider rows while creating rings.
+[08/29 09:25:22     34s] The ring targets are set to core/block ring wires.
+[08/29 09:25:22     34s] addStripe will allow jog to connect padcore ring and block ring.
+[08/29 09:25:22     34s] 
+[08/29 09:25:22     34s] Stripes will not extend to closest target.
+[08/29 09:25:22     34s] When breaking rings, the power planner will consider the existence of blocks.
+[08/29 09:25:22     34s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[08/29 09:25:22     34s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[08/29 09:25:22     34s] Stripes will not be created over regions without power planning wires.
+[08/29 09:25:22     34s] Offset for stripe breaking is set to 0.
+[08/29 09:25:22     34s] Stripes will stop at the boundary of the specified area.
+[08/29 09:25:22     34s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[08/29 09:25:22     34s] Change floorplan default-technical-site to 'CoreSite'.
+[08/29 09:25:23     34s] Extraction setup Delayed 
+[08/29 09:25:23     34s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1640.9M, current mem=1350.5M)
+[08/29 09:25:23     34s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[08/29 09:25:23     34s] 
+[08/29 09:25:23     34s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[08/29 09:25:23     34s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[08/29 09:25:23     34s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[08/29 09:25:23     34s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[08/29 09:25:23     34s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[08/29 09:25:23     34s] Summary for sequential cells identification: 
+[08/29 09:25:23     34s]   Identified SBFF number: 104
+[08/29 09:25:23     34s]   Identified MBFF number: 0
+[08/29 09:25:23     34s]   Identified SB Latch number: 0
+[08/29 09:25:23     34s]   Identified MB Latch number: 0
+[08/29 09:25:23     34s]   Not identified SBFF number: 16
+[08/29 09:25:23     34s]   Not identified MBFF number: 0
+[08/29 09:25:23     34s]   Not identified SB Latch number: 0
+[08/29 09:25:23     34s]   Not identified MB Latch number: 0
+[08/29 09:25:23     34s]   Number of sequential cells which are not FFs: 32
+[08/29 09:25:23     34s] Total number of combinational cells: 318
+[08/29 09:25:23     34s] Total number of sequential cells: 152
+[08/29 09:25:23     34s] Total number of tristate cells: 10
+[08/29 09:25:23     34s] Total number of level shifter cells: 0
+[08/29 09:25:23     34s] Total number of power gating cells: 0
+[08/29 09:25:23     34s] Total number of isolation cells: 0
+[08/29 09:25:23     34s] Total number of power switch cells: 0
+[08/29 09:25:23     34s] Total number of pulse generator cells: 0
+[08/29 09:25:23     34s] Total number of always on buffers: 0
+[08/29 09:25:23     34s] Total number of retention cells: 0
+[08/29 09:25:23     34s] Total number of physical cells: 0
+[08/29 09:25:23     34s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[08/29 09:25:23     34s] Total number of usable buffers: 16
+[08/29 09:25:23     34s] List of unusable buffers:
+[08/29 09:25:23     34s] Total number of unusable buffers: 0
+[08/29 09:25:23     34s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[08/29 09:25:23     34s] Total number of usable inverters: 19
+[08/29 09:25:23     34s] List of unusable inverters:
+[08/29 09:25:23     34s] Total number of unusable inverters: 0
+[08/29 09:25:23     34s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[08/29 09:25:23     34s] Total number of identified usable delay cells: 8
+[08/29 09:25:23     34s] List of identified unusable delay cells:
+[08/29 09:25:23     34s] Total number of identified unusable delay cells: 0
+[08/29 09:25:23     34s] 
+[08/29 09:25:23     34s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[08/29 09:25:23     34s] 
+[08/29 09:25:23     34s] TimeStamp Deleting Cell Server Begin ...
+[08/29 09:25:23     34s] 
+[08/29 09:25:23     34s] TimeStamp Deleting Cell Server End ...
+[08/29 09:25:23     34s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1613.1M, current mem=1613.1M)
+[08/29 09:25:23     34s] 
+[08/29 09:25:23     34s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[08/29 09:25:23     34s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[08/29 09:25:23     34s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[08/29 09:25:23     34s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[08/29 09:25:23     34s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[08/29 09:25:23     34s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[08/29 09:25:23     34s] Summary for sequential cells identification: 
+[08/29 09:25:23     34s]   Identified SBFF number: 104
+[08/29 09:25:23     34s]   Identified MBFF number: 0
+[08/29 09:25:23     34s]   Identified SB Latch number: 0
+[08/29 09:25:23     34s]   Identified MB Latch number: 0
+[08/29 09:25:23     34s]   Not identified SBFF number: 16
+[08/29 09:25:23     34s]   Not identified MBFF number: 0
+[08/29 09:25:23     34s]   Not identified SB Latch number: 0
+[08/29 09:25:23     34s]   Not identified MB Latch number: 0
+[08/29 09:25:23     34s]   Number of sequential cells which are not FFs: 32
+[08/29 09:25:23     34s] 
+[08/29 09:25:23     34s] Trim Metal Layers:
+[08/29 09:25:23     34s]  Visiting view : worst
+[08/29 09:25:23     34s]    : PowerDomain = none : Weighted F : unweighted  = 37.60 (1.000) with rcCorner = 0
+[08/29 09:25:23     34s]    : PowerDomain = none : Weighted F : unweighted  = 20.10 (1.000) with rcCorner = -1
+[08/29 09:25:23     34s]  Visiting view : best
+[08/29 09:25:23     34s]    : PowerDomain = none : Weighted F : unweighted  = 11.90 (1.000) with rcCorner = 0
+[08/29 09:25:23     34s]    : PowerDomain = none : Weighted F : unweighted  = 5.30 (1.000) with rcCorner = -1
+[08/29 09:25:23     34s] 
+[08/29 09:25:23     34s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[08/29 09:25:23     34s] 
+[08/29 09:25:23     34s] TimeStamp Deleting Cell Server Begin ...
+[08/29 09:25:23     34s] 
+[08/29 09:25:23     34s] TimeStamp Deleting Cell Server End ...
+[08/29 09:25:23     34s] Reading floorplan file - /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat//low_power_soc.fp.gz (mem = 1791.4M).
+[08/29 09:25:23     34s] #% Begin Load floorplan data ... (date=08/29 09:25:23, mem=1613.6M)
+[08/29 09:25:23     34s] *info: reset 56 existing net BottomPreferredLayer and AvoidDetour
+[08/29 09:25:23     34s] Deleting old partition specification.
+[08/29 09:25:23     34s]  ... processed partition successfully.
+[08/29 09:25:23     34s] Reading binary special route file /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat//low_power_soc.fp.spr.gz (Created by Innovus v21.15-s110_1 on Sat Aug 29 09:20:02 2026, version: 1)
+[08/29 09:25:23     34s] Convert 0 swires and 0 svias from compressed groups
+[08/29 09:25:23     34s] 89 swires and 46 svias were compressed
+[08/29 09:25:23     34s] 89 swires and 46 svias were decompressed from small or sparse groups
+[08/29 09:25:23     34s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1615.0M, current mem=1615.0M)
+[08/29 09:25:23     34s] There are 28 io inst loaded
+[08/29 09:25:23     34s] There are 1 nets with avoidDetour being set
+[08/29 09:25:23     34s] Extracting standard cell pins and blockage ...... 
+[08/29 09:25:23     35s] Pin and blockage extraction finished
+[08/29 09:25:23     35s] #% End Load floorplan data ... (date=08/29 09:25:23, total cpu=0:00:00.1, real=0:00:00.0, peak res=1629.7M, current mem=1629.7M)
+[08/29 09:25:23     35s] #% Begin Load SymbolTable ... (date=08/29 09:25:23, mem=1629.7M)
+[08/29 09:25:23     35s] #% End Load SymbolTable ... (date=08/29 09:25:23, total cpu=0:00:00.0, real=0:00:00.0, peak res=1629.7M, current mem=1629.7M)
+[08/29 09:25:23     35s] Loading place ...
+[08/29 09:25:24     35s] #% Begin Load placement data ... (date=08/29 09:25:23, mem=1629.7M)
+[08/29 09:25:24     35s] Reading placement file - /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat//low_power_soc.place.gz.
+[08/29 09:25:24     35s] ** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Sat Aug 29 09:20:03 2026, version# 2) ...
+[08/29 09:25:24     35s] Read Views for adaptive view pruning ...
+[08/29 09:25:24     35s] Read 0 views from Binary DB for adaptive view pruning
+[08/29 09:25:24     35s] *** Checked 2 GNC rules.
+[08/29 09:25:24     35s] *** applyConnectGlobalNets disabled.
+[08/29 09:25:24     35s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1808.4M) ***
+[08/29 09:25:24     35s] Has not load the powerDB, will keep enabled
+[08/29 09:25:24     35s] Has not load the powerDB, will keep enabled
+[08/29 09:25:24     35s] Total net length = 8.164e+03 (3.804e+03 4.361e+03) (ext = 4.531e+03)
+[08/29 09:25:24     35s] #% End Load placement data ... (date=08/29 09:25:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1630.8M, current mem=1630.8M)
+[08/29 09:25:24     35s] Reading PG file /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat//low_power_soc.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Sat Aug 29 09:20:02 2026)
+[08/29 09:25:24     35s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1805.4M) ***
+[08/29 09:25:24     35s] #% Begin Load routing data ... (date=08/29 09:25:24, mem=1631.2M)
+[08/29 09:25:24     35s] Reading routing file - /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat//low_power_soc.route.gz.
+[08/29 09:25:24     35s] Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Sat Aug 29 09:20:03 2026 Format: 20.1) ...
+[08/29 09:25:24     35s] *** Total 55 nets are successfully restored.
+[08/29 09:25:24     35s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1805.4M) ***
+[08/29 09:25:24     35s] Has not load the powerDB, will keep enabled
+[08/29 09:25:24     35s] Has not load the powerDB, will keep enabled
+[08/29 09:25:24     35s] #% End Load routing data ... (date=08/29 09:25:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1632.1M, current mem=1632.1M)
+[08/29 09:25:24     35s] Loading Drc markers ...
+[08/29 09:25:24     35s] ... 1 markers are loaded ...
+[08/29 09:25:24     35s] ... 0 geometry drc markers are loaded ...
+[08/29 09:25:24     35s] ... 0 antenna drc markers are loaded ...
+[08/29 09:25:24     35s] Reading property file /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat//low_power_soc.prop
+[08/29 09:25:24     35s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1809.4M) ***
+[08/29 09:25:24     35s] Set Default Input Pin Transition as 0.1 ps.
+[08/29 09:25:25     35s] eee: readRCCornerMetaData, file read unsuccessful: /home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/extraction/extractionMetaData.gz
+[08/29 09:25:25     35s] Extraction setup Started 
+[08/29 09:25:25     35s] 
+[08/29 09:25:25     35s] Trim Metal Layers:
+[08/29 09:25:25     35s] Summary of Active RC-Corners : 
+[08/29 09:25:25     35s]  
+[08/29 09:25:25     35s]  Analysis View: worst
+[08/29 09:25:25     35s]     RC-Corner Name        : rc
+[08/29 09:25:25     35s]     RC-Corner Index       : 0
+[08/29 09:25:25     35s]     RC-Corner Temperature : 125 Celsius
+[08/29 09:25:25     35s]     RC-Corner Cap Table   : ''
+[08/29 09:25:25     35s]     RC-Corner PostRoute Res Factor        : 1
+[08/29 09:25:25     35s]     RC-Corner PostRoute Cap Factor        : 1
+[08/29 09:25:25     35s]     RC-Corner PostRoute XCap Factor       : 1
+[08/29 09:25:25     35s]     RC-Corner Technology file: '/home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/libs/mmmc/rc/gpdk045.tch'
+[08/29 09:25:25     35s]  
+[08/29 09:25:25     35s]  Analysis View: best
+[08/29 09:25:25     35s]     RC-Corner Name        : rc
+[08/29 09:25:25     35s]     RC-Corner Index       : 0
+[08/29 09:25:25     35s]     RC-Corner Temperature : 125 Celsius
+[08/29 09:25:25     35s]     RC-Corner Cap Table   : ''
+[08/29 09:25:25     35s]     RC-Corner PostRoute Res Factor        : 1
+[08/29 09:25:25     35s]     RC-Corner PostRoute Cap Factor        : 1
+[08/29 09:25:25     35s]     RC-Corner PostRoute XCap Factor       : 1
+[08/29 09:25:25     35s]     RC-Corner Technology file: '/home/kite/Desktop/soc1/phydesign/low_power_soc.enc.dat/libs/mmmc/rc/gpdk045.tch'
+[08/29 09:25:25     35s] 
+[08/29 09:25:25     35s] Trim Metal Layers:
+[08/29 09:25:25     35s] LayerId::1 widthSet size::1
+[08/29 09:25:25     35s] LayerId::2 widthSet size::1
+[08/29 09:25:25     35s] LayerId::3 widthSet size::1
+[08/29 09:25:25     35s] LayerId::4 widthSet size::1
+[08/29 09:25:25     35s] LayerId::5 widthSet size::1
+[08/29 09:25:25     35s] LayerId::6 widthSet size::1
+[08/29 09:25:25     35s] LayerId::7 widthSet size::1
+[08/29 09:25:25     35s] LayerId::8 widthSet size::1
+[08/29 09:25:25     35s] LayerId::9 widthSet size::1
+[08/29 09:25:25     35s] LayerId::10 widthSet size::1
+[08/29 09:25:25     35s] LayerId::11 widthSet size::1
+[08/29 09:25:25     35s] eee: pegSigSF::1.070000
+[08/29 09:25:25     35s] Initializing multi-corner resistance tables ...
+[08/29 09:25:25     35s] eee: l::1 avDens::0.107431 usedTrk::4579.136850 availTrk::42623.826292 sigTrk::4579.136850
+[08/29 09:25:25     35s] eee: l::2 avDens::0.021182 usedTrk::144.631872 availTrk::6828.141037 sigTrk::144.631872
+[08/29 09:25:25     35s] eee: l::3 avDens::0.014008 usedTrk::96.687427 availTrk::6902.494896 sigTrk::96.687427
+[08/29 09:25:25     35s] eee: l::4 avDens::0.010075 usedTrk::24.740351 availTrk::2455.527300 sigTrk::24.740351
+[08/29 09:25:25     35s] eee: l::5 avDens::0.006407 usedTrk::3.785965 availTrk::590.951575 sigTrk::3.785965
+[08/29 09:25:25     35s] eee: l::6 avDens::0.008208 usedTrk::4.923392 availTrk::599.824909 sigTrk::4.923392
+[08/29 09:25:25     35s] eee: l::7 avDens::0.003192 usedTrk::0.512281 availTrk::160.480213 sigTrk::0.512281
+[08/29 09:25:25     35s] eee: l::8 avDens::0.007045 usedTrk::11.061404 availTrk::1570.000539 sigTrk::11.061404
+[08/29 09:25:25     35s] eee: l::9 avDens::0.062789 usedTrk::77.014035 availTrk::1226.548487 sigTrk::77.014035
+[08/29 09:25:25     35s] eee: l::10 avDens::0.081833 usedTrk::452.827778 availTrk::5533.527395 sigTrk::452.827778
+[08/29 09:25:25     35s] eee: l::11 avDens::0.083505 usedTrk::119.908479 availTrk::1435.938054 sigTrk::119.908479
+[08/29 09:25:25     35s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.327815 uaWl=1.000000 uaWlH=0.444998 aWlH=0.000000 lMod=0 pMax=0.857500 pMod=81 wcR=0.772700 newSi=0.001600 wHLS=1.931750 siPrev=0 viaL=0.000000 crit=0.000000 shortMod=0.000000 fMod=0.000000 
+[08/29 09:25:25     35s] #% Begin Load power constraints ... (date=08/29 09:25:25, mem=1637.9M)
+[08/29 09:25:25     35s] #% End Load power constraints ... (date=08/29 09:25:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=1645.1M, current mem=1645.1M)
+[08/29 09:25:25     35s] **WARN: (TCLCMD-1263):	The -frame parameter is obsolete and will be removed from the software in a future release. To ensure compatibility with future releases, remove this parameter from your scripts.
+[08/29 09:25:25     35s] #% Begin load AAE data ... (date=08/29 09:25:25, mem=1667.8M)
+[08/29 09:25:25     36s] AAE DB initialization (MEM=1867.42 CPU=0:00:00.0 REAL=0:00:00.0) 
+[08/29 09:25:25     36s] #% End load AAE data ... (date=08/29 09:25:25, total cpu=0:00:00.6, real=0:00:00.0, peak res=1674.1M, current mem=1674.1M)
+[08/29 09:25:25     36s] Restoring CCOpt config...
+[08/29 09:25:25     36s] 
+[08/29 09:25:25     36s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[08/29 09:25:25     36s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[08/29 09:25:25     36s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[08/29 09:25:25     36s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[08/29 09:25:25     36s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[08/29 09:25:25     36s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[08/29 09:25:25     36s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[08/29 09:25:25     36s] Summary for sequential cells identification: 
+[08/29 09:25:25     36s]   Identified SBFF number: 104
+[08/29 09:25:25     36s]   Identified MBFF number: 0
+[08/29 09:25:25     36s]   Identified SB Latch number: 0
+[08/29 09:25:25     36s]   Identified MB Latch number: 0
+[08/29 09:25:25     36s]   Not identified SBFF number: 16
+[08/29 09:25:25     36s]   Not identified MBFF number: 0
+[08/29 09:25:25     36s]   Not identified SB Latch number: 0
+[08/29 09:25:25     36s]   Not identified MB Latch number: 0
+[08/29 09:25:25     36s]   Number of sequential cells which are not FFs: 32
+[08/29 09:25:25     36s]  Visiting view : worst
+[08/29 09:25:25     36s]    : PowerDomain = none : Weighted F : unweighted  = 37.60 (1.000) with rcCorner = 0
+[08/29 09:25:25     36s]    : PowerDomain = none : Weighted F : unweighted  = 20.10 (1.000) with rcCorner = -1
+[08/29 09:25:25     36s]  Visiting view : best
+[08/29 09:25:25     36s]    : PowerDomain = none : Weighted F : unweighted  = 11.90 (1.000) with rcCorner = 0
+[08/29 09:25:25     36s]    : PowerDomain = none : Weighted F : unweighted  = 5.30 (1.000) with rcCorner = -1
+[08/29 09:25:25     36s] 
+[08/29 09:25:25     36s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[08/29 09:25:25     36s]   Extracting original clock gating for clk...
+[08/29 09:25:25     36s]     clock_tree clk contains 18 sinks and 0 clock gates.
+[08/29 09:25:25     36s]       Found 5 implicit ignore or stop or exclude pins - run report_ccopt_clock_trees -list_special_pins for more details.
+[08/29 09:25:25     36s]   Extracting original clock gating for clk done.
+[08/29 09:25:25     36s]   The skew group clk/sdc was created. It contains 18 sinks and 1 sources.
+[08/29 09:25:25     36s] **WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+[08/29 09:25:25     36s] **WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+[08/29 09:25:25     36s] **WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+[08/29 09:25:25     36s] **WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+[08/29 09:25:25     36s] **WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+[08/29 09:25:25     36s] **WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+[08/29 09:25:25     36s] Restoring CCOpt config done.
+[08/29 09:25:25     36s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[08/29 09:25:25     36s] timing_enable_separate_device_slew_effect_sensitivities
+[08/29 09:25:26     36s] Ending "read_design" (total cpu=0:00:04.5, real=0:00:06.0, peak res=1698.4M, current mem=1683.3M)
+[08/29 09:25:26     36s] Loading  (low_power_soc)
+[08/29 09:25:26     36s] Traverse HInst (low_power_soc)
+[08/29 09:25:44     39s] <CMD> all_setup_analysis_views
+[08/29 09:25:44     39s] <CMD> all_hold_analysis_views
+[08/29 09:25:44     39s] <CMD> all_setup_analysis_views
+[08/29 09:25:44     39s] <CMD> all_hold_analysis_views
+[08/29 09:25:44     39s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[08/29 09:25:44     39s]           To modify the active set of constraints you can use one of the following means:
+[08/29 09:25:44     39s]           - Use the set_analysis_view command to change the set of active views.
+[08/29 09:25:44     39s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[08/29 09:25:44     39s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[08/29 09:25:44     39s] <CMD> all_setup_analysis_views
+[08/29 09:25:44     39s] <CMD> all_hold_analysis_views
+[08/29 09:25:44     39s] <CMD> all_setup_analysis_views
+[08/29 09:25:44     39s] <CMD> all_hold_analysis_views
+[08/29 09:25:44     39s] **WARN: (IMPSYC-3133):	The unloadTimingCon command is not supported in the MMMC environment.
+[08/29 09:25:44     39s]           To modify the active set of constraints you can use one of the following means:
+[08/29 09:25:44     39s]           - Use the set_analysis_view command to change the set of active views.
+[08/29 09:25:44     39s]           - Use the update_analysis_view command to change the constraint mode associated with an active view.
+[08/29 09:25:44     39s]           - Use the update_constraint_mode command to change the set of SDC files pointed to be active modes.
+[08/29 09:25:56     40s] <CMD> read_spef low_power_soc.spef
+[08/29 09:25:56     40s] Used active corner rc for reading SPEF file as option '-rc_corner <cornerName>' is not specified in MMMC mode.
+[08/29 09:25:56     40s] read_spef Option :  low_power_soc.spef -noStarN 
+[08/29 09:25:56     40s] 
+[08/29 09:25:56     40s] SPEF files for RC Corner rc:
+[08/29 09:25:56     40s] Top-level spef file 'low_power_soc.spef'.
+[08/29 09:25:56     40s] Start spef parsing (MEM=1869.42).
+[08/29 09:25:56     40s] Number of corners: 1
+[08/29 09:25:56     40s] Number of parallel threads processing the nets is: 1
+[08/29 09:25:56     40s] Maximum backlog used in parser: 50.
+[08/29 09:25:56     40s] Reading multiple SPEF files in parallel.
+[08/29 09:25:56     40s] RCDB /tmp/ssv_tmpdir_42686_HM15uv/low_power_soc_42686_qVn0wr.rcdb.d/low_power_soc.rcdb.d Creation Started (CPU Time= 0:00:00.0  MEM= 1877.4M)
+[08/29 09:25:57     40s] Creating parasitic data file '/tmp/ssv_tmpdir_42686_HM15uv/low_power_soc_42686_qVn0wr.rcdb.d/low_power_soc.rcdb.d' for storing RC.
+[08/29 09:25:57     40s] SPEF file low_power_soc.spef.
+[08/29 09:25:57     40s] Number of Resistors     : 992
+[08/29 09:25:57     40s] Number of Ground Caps   : 944
+[08/29 09:25:57     40s] Number of Coupling Caps : 100
+[08/29 09:25:57     40s] 
+[08/29 09:25:57     40s] RCDB /tmp/ssv_tmpdir_42686_HM15uv/low_power_soc_42686_qVn0wr.rcdb.d/low_power_soc.rcdb.d Creation Completed (CPU Time= 0:00:00.2  MEM= 1912.4M)
+[08/29 09:25:57     40s] End spef parsing (MEM=1880.42 CPU=0:00:00.2 REAL=0:00:01.0).
+[08/29 09:25:57     40s] Spef for RC Corner 'rc' was previously specified. Dropping the previous specification.
+[08/29 09:25:57     40s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=1872.422M)
+[08/29 09:25:57     40s] Opening parasitic data file '/tmp/ssv_tmpdir_42686_HM15uv/low_power_soc_42686_qVn0wr.rcdb.d/low_power_soc.rcdb.d' for reading (mem: 1872.422M)
+[08/29 09:25:57     41s] Closing parasitic data file '/tmp/ssv_tmpdir_42686_HM15uv/low_power_soc_42686_qVn0wr.rcdb.d/low_power_soc.rcdb.d': 0 access done (mem: 1872.422M)
+[08/29 09:25:57     41s] Lumped Parasitic Loading Completed (total cpu=0:00:00.4, real=0:00:00.0, current mem=1872.422M)
+[08/29 09:25:57     41s] 5 nets are missing in SPEF file. The names of these nets are saved in ./rc.missing_nets.rpt.
+[08/29 09:25:57     41s] Has not load the powerDB, will keep enabled
+[08/29 09:25:57     41s] Has not load the powerDB, will keep enabled
+[08/29 09:26:04     42s] <CMD> read_sdf low_power_soc.sdf
+[08/29 09:26:04     42s] **WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+[08/29 09:26:18     44s] <CMD> get_time_unit
+[08/29 09:26:18     44s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+[08/29 09:26:18     44s] AAE_INFO: opIsDesignInPostRouteState() is 1
+[08/29 09:26:18     44s] AAE_INFO: resetNetProps for all the views. 
+[08/29 09:26:18     44s] Starting SI iteration 1 using Infinite Timing Windows
+[08/29 09:26:19     44s] #################################################################################
+[08/29 09:26:19     44s] # Design Name: low_power_soc
+[08/29 09:26:19     44s] # Design Mode: 65nm
+[08/29 09:26:19     44s] # Analysis Mode: MMMC OCV 
+[08/29 09:26:19     44s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:26:19     44s] # Signoff Settings: SI On 
+[08/29 09:26:19     44s] #################################################################################
+[08/29 09:26:19     44s] AAE_INFO: 1 threads acquired from CTE.
+[08/29 09:26:19     44s] Setting infinite Tws ...
+[08/29 09:26:19     44s] First Iteration Infinite Tw... 
+[08/29 09:26:19     44s] Topological Sorting (REAL = 0:00:00.0, MEM = 2020.6M, InitMEM = 2020.6M)
+[08/29 09:26:19     44s] Start delay calculation (fullDC) (1 T). (MEM=2020.58)
+[08/29 09:26:19     44s] Start AAE Lib Loading. (MEM=2020.58)
+[08/29 09:26:19     44s] End AAE Lib Loading. (MEM=2039.66 CPU=0:00:00.0 Real=0:00:00.0)
+[08/29 09:26:19     44s] End AAE Lib Interpolated Model. (MEM=2039.66 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[08/29 09:26:19     44s] Opening parasitic data file '/tmp/ssv_tmpdir_42686_HM15uv/low_power_soc_42686_qVn0wr.rcdb.d/low_power_soc.rcdb.d' for reading (mem: 2077.812M)
+[08/29 09:26:19     44s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 2079.8M)
+[08/29 09:26:19     44s] AAE_INFO-618: Total number of nets in the design is 56,  94.6 percent of the nets selected for SI analysis
+[08/29 09:26:19     44s] AAE_INFO-618: Total number of nets in the design is 56,  94.6 percent of the nets selected for SI analysis
+[08/29 09:26:19     44s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[08/29 09:26:19     44s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[08/29 09:26:19     44s] End delay calculation. (MEM=2158.33 CPU=0:00:00.1 REAL=0:00:00.0)
+[08/29 09:26:19     44s] End delay calculation (fullDC). (MEM=2158.33 CPU=0:00:00.1 REAL=0:00:00.0)
+[08/29 09:26:19     44s] *** CDM Built up (cpu=0:00:00.4  real=0:00:00.0  mem= 2158.3M) ***
+[08/29 09:26:19     44s] Has not load the powerDB, will keep enabled
+[08/29 09:26:19     44s] Has not load the powerDB, will keep enabled
+[08/29 09:26:19     44s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2158.3M)
+[08/29 09:26:19     44s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2158.3M)
+[08/29 09:26:19     44s] Starting SI iteration 2
+[08/29 09:26:19     44s] Start delay calculation (fullDC) (1 T). (MEM=2151.9)
+[08/29 09:26:19     44s] End AAE Lib Interpolated Model. (MEM=2151.9 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[08/29 09:26:19     44s] AAE_INFO-618: Total number of nets in the design is 56,  25.0 percent of the nets selected for SI analysis
+[08/29 09:26:19     44s] AAE_INFO-618: Total number of nets in the design is 56,  10.7 percent of the nets selected for SI analysis
+[08/29 09:26:19     44s] End delay calculation. (MEM=2201.1 CPU=0:00:00.0 REAL=0:00:00.0)
+[08/29 09:26:19     44s] End delay calculation (fullDC). (MEM=2201.1 CPU=0:00:00.1 REAL=0:00:00.0)
+[08/29 09:26:20     44s] *** CDM Built up (cpu=0:00:00.1  real=0:00:01.0  mem= 2201.1M) ***
+[08/29 09:26:20     44s] Has not load the powerDB, will keep enabled
+[08/29 09:26:20     44s] Has not load the powerDB, will keep enabled
+[08/29 09:26:20     44s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:26:20     44s] Parsing file top.mtarpt...
+[08/29 09:26:28     45s] <CMD> get_time_unit
+[08/29 09:26:28     45s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:26:28     45s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:26:28     45s] Parsing file top.mtarpt...
+[08/29 09:26:39     47s] <CMD> get_time_unit
+[08/29 09:26:39     47s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+[08/29 09:26:39     47s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:26:39     47s] Parsing file top.mtarpt...
+[08/29 09:26:59     50s] <CMD_INTERNAL> zoomSelected
+[08/29 09:26:59     50s] <CMD_INTERNAL> zoomSelected
+[08/29 09:27:00     50s] <CMD> all_analysis_views
+[08/29 09:27:00     50s] <CMD> all_setup_analysis_views
+[08/29 09:27:00     50s] <CMD> all_hold_analysis_views
+[08/29 09:27:00     50s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:27:00     50s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:27:19     52s] <CMD> add_repeater -cell BUFX2 -net rst_n
+[08/29 09:27:19     52s] #################################################################################
+[08/29 09:27:19     52s] # Design Name: low_power_soc
+[08/29 09:27:19     52s] # Design Mode: 65nm
+[08/29 09:27:19     52s] # Analysis Mode: MMMC OCV 
+[08/29 09:27:19     52s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:27:19     52s] # Signoff Settings: SI On 
+[08/29 09:27:19     52s] #################################################################################
+[08/29 09:27:19     52s] #################################################################################
+[08/29 09:27:19     52s] # Design Name: low_power_soc
+[08/29 09:27:19     52s] # Design Mode: 65nm
+[08/29 09:27:19     52s] # Analysis Mode: MMMC OCV 
+[08/29 09:27:19     52s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:27:19     52s] # Signoff Settings: SI On 
+[08/29 09:27:19     52s] #################################################################################
+[08/29 09:27:19     52s] **ERROR: (IMPOPT-6217):	Net 'rst_n' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[08/29 09:27:22     53s] <CMD_INTERNAL> redraw
+[08/29 09:27:46     56s] <CMD_INTERNAL> zoomSelected
+[08/29 09:27:46     56s] <CMD_INTERNAL> zoomSelected
+[08/29 09:27:46     56s] <CMD> all_analysis_views
+[08/29 09:27:46     56s] <CMD> all_setup_analysis_views
+[08/29 09:27:46     56s] <CMD> all_hold_analysis_views
+[08/29 09:27:46     56s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:27:46     56s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:27:54     57s] <CMD> add_repeater -cell BUFX2 -net rst_n
+[08/29 09:27:54     57s] #################################################################################
+[08/29 09:27:54     57s] # Design Name: low_power_soc
+[08/29 09:27:54     57s] # Design Mode: 65nm
+[08/29 09:27:54     57s] # Analysis Mode: MMMC OCV 
+[08/29 09:27:54     57s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:27:54     57s] # Signoff Settings: SI On 
+[08/29 09:27:54     57s] #################################################################################
+[08/29 09:27:54     57s] **ERROR: (IMPOPT-6217):	Net 'rst_n' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[08/29 09:27:58     58s] <CMD_INTERNAL> redraw
+[08/29 09:28:05     58s] <CMD> add_repeater -cell BUFX2 -net rst_n
+[08/29 09:28:05     58s] #################################################################################
+[08/29 09:28:05     58s] # Design Name: low_power_soc
+[08/29 09:28:05     58s] # Design Mode: 65nm
+[08/29 09:28:05     58s] # Analysis Mode: MMMC OCV 
+[08/29 09:28:05     58s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:28:05     58s] # Signoff Settings: SI On 
+[08/29 09:28:05     58s] #################################################################################
+[08/29 09:28:05     58s] **ERROR: (IMPOPT-6217):	Net 'rst_n' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[08/29 09:28:12     60s] <CMD_INTERNAL> redraw
+[08/29 09:28:28     62s] <CMD> add_repeater -cell BUFX3 -net rst_n
+[08/29 09:28:28     62s] #################################################################################
+[08/29 09:28:28     62s] # Design Name: low_power_soc
+[08/29 09:28:28     62s] # Design Mode: 65nm
+[08/29 09:28:28     62s] # Analysis Mode: MMMC OCV 
+[08/29 09:28:28     62s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:28:28     62s] # Signoff Settings: SI On 
+[08/29 09:28:28     62s] #################################################################################
+[08/29 09:28:28     62s] **ERROR: (IMPOPT-6217):	Net 'rst_n' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[08/29 09:28:30     62s] <CMD_INTERNAL> redraw
+[08/29 09:28:52     65s] <CMD_INTERNAL> zoomSelected
+[08/29 09:28:52     65s] <CMD_INTERNAL> zoomSelected
+[08/29 09:28:52     65s] <CMD_INTERNAL> zoomSelected
+[08/29 09:28:59     66s] <CMD> all_analysis_views
+[08/29 09:28:59     66s] <CMD> all_setup_analysis_views
+[08/29 09:28:59     66s] <CMD> all_hold_analysis_views
+[08/29 09:28:59     66s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:28:59     66s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:29:12     68s] <CMD> change_cell -inst {wake_ff_reg[0]} -cell DFFRHQX2
+[08/29 09:29:12     68s] #################################################################################
+[08/29 09:29:12     68s] # Design Name: low_power_soc
+[08/29 09:29:12     68s] # Design Mode: 65nm
+[08/29 09:29:12     68s] # Analysis Mode: MMMC OCV 
+[08/29 09:29:12     68s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:29:12     68s] # Signoff Settings: SI On 
+[08/29 09:29:12     68s] #################################################################################
+[08/29 09:29:12     68s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2207.1M, EPOCH TIME: 1787975952.261547
+[08/29 09:29:12     68s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2207.1M, EPOCH TIME: 1787975952.261662
+[08/29 09:29:12     68s] # Init pin-track-align, new floorplan.
+[08/29 09:29:12     68s] Processing tracks to init pin-track alignment.
+[08/29 09:29:12     68s] z: 2, totalTracks: 1
+[08/29 09:29:12     68s] z: 4, totalTracks: 1
+[08/29 09:29:12     68s] z: 6, totalTracks: 1
+[08/29 09:29:12     68s] z: 8, totalTracks: 1
+[08/29 09:29:12     68s] #spOpts: hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:29:12     68s] All LLGs are deleted
+[08/29 09:29:12     68s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:29:12     68s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:29:12     68s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2207.1M, EPOCH TIME: 1787975952.373604
+[08/29 09:29:12     68s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2207.1M, EPOCH TIME: 1787975952.373853
+[08/29 09:29:12     68s] # Building low_power_soc llgBox search-tree.
+[08/29 09:29:12     68s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2207.1M, EPOCH TIME: 1787975952.374004
+[08/29 09:29:12     68s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:29:12     68s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:29:12     68s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2207.1M, EPOCH TIME: 1787975952.375203
+[08/29 09:29:12     68s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:29:12     68s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:29:12     68s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2207.1M, EPOCH TIME: 1787975952.396508
+[08/29 09:29:12     68s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x3c94f9c0): Create thread pool 0x7fc2ef9f6ec0.
+[08/29 09:29:12     68s] SY_THREAD_POOL_QUEUE SY-GLB-THREAD-POOL (0x3c94f9c0): 0 out of 1 thread pools are available.
+[08/29 09:29:12     68s] After signature check, allow fast init is false, keep pre-filter is false.
+[08/29 09:29:12     68s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[08/29 09:29:12     68s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.004, REAL:0.003, MEM:2335.1M, EPOCH TIME: 1787975952.399816
+[08/29 09:29:12     68s] Use non-trimmed site array because memory saving is not enough.
+[08/29 09:29:12     68s] SiteArray: non-trimmed site array dimensions = 209 x 1790
+[08/29 09:29:12     68s] SiteArray: use 1,875,968 bytes
+[08/29 09:29:12     68s] SiteArray: current memory after site array memory allocation 2336.9M
+[08/29 09:29:12     68s] SiteArray: FP blocked sites are writable
+[08/29 09:29:12     68s] Estimated cell power/ground rail width = 0.160 um
+[08/29 09:29:12     68s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:29:12     68s] OPERPROF:         Starting RoutingBlockageFromWireViaStBox at level 5, MEM:2336.9M, EPOCH TIME: 1787975952.405191
+[08/29 09:29:12     68s] OPERPROF:         Finished RoutingBlockageFromWireViaStBox at level 5, CPU:0.000, REAL:0.000, MEM:2336.9M, EPOCH TIME: 1787975952.405351
+[08/29 09:29:12     68s] SiteArray: number of non floorplan blocked sites for llg default is 374110
+[08/29 09:29:12     68s] Atter site array init, number of instance map data is 0.
+[08/29 09:29:12     68s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.034, REAL:0.034, MEM:2336.9M, EPOCH TIME: 1787975952.409142
+[08/29 09:29:12     68s] 
+[08/29 09:29:12     68s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:29:12     68s] 
+[08/29 09:29:12     68s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:29:12     68s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.039, REAL:0.038, MEM:2336.9M, EPOCH TIME: 1787975952.412485
+[08/29 09:29:12     68s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2336.9M, EPOCH TIME: 1787975952.412555
+[08/29 09:29:12     68s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.003, MEM:2352.9M, EPOCH TIME: 1787975952.416039
+[08/29 09:29:12     68s] [CPU] DPlace-Init (cpu=0:00:00.1, real=0:00:00.0, mem=2352.9MB).
+[08/29 09:29:12     68s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.152, REAL:0.155, MEM:2352.9M, EPOCH TIME: 1787975952.416298
+[08/29 09:29:12     68s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.152, REAL:0.155, MEM:2352.9M, EPOCH TIME: 1787975952.416353
+[08/29 09:29:12     68s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver wake_pad/PAD is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/Y is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/PAD is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/Y is found in the delay stage for net async_wakeup.
+[08/29 09:29:12     68s] Dumping Information for Job ...
+[08/29 09:29:12     68s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+
+[08/29 09:29:12     68s] Dumping Information for Job ...
+[08/29 09:29:12     68s] **ERROR: (IMPESI-2221):	No driver wake_pad/PAD is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/Y is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/PAD is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/Y is found in the delay stage for net async_wakeup.
+
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+[08/29 09:29:12     68s] Dumping Information for Job ...
+[08/29 09:29:12     68s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+
+[08/29 09:29:12     68s] Resize wake_ff_reg[0] (DFFRHQX1) to DFFRHQX2.
+[08/29 09:29:12     68s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2412.1M, EPOCH TIME: 1787975952.471418
+[08/29 09:29:12     68s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:29:12     68s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:29:12     68s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:29:12     68s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:29:12     68s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2412.1M, EPOCH TIME: 1787975952.472539
+[08/29 09:29:12     68s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2412.1M, EPOCH TIME: 1787975952.472656
+[08/29 09:29:12     68s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2351.1M, EPOCH TIME: 1787975952.473874
+[08/29 09:29:12     68s] <CMD_INTERNAL> redraw
+[08/29 09:29:24     69s] <CMD> get_time_unit
+[08/29 09:29:24     69s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+[08/29 09:29:24     69s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:29:24     69s] Parsing file top.mtarpt...
+[08/29 09:29:56     74s] <CMD_INTERNAL> zoomSelected
+[08/29 09:29:56     74s] <CMD_INTERNAL> zoomSelected
+[08/29 09:29:56     74s] <CMD_INTERNAL> zoomSelected
+[08/29 09:29:59     74s] <CMD_INTERNAL> zoomSelected
+[08/29 09:29:59     74s] <CMD_INTERNAL> zoomSelected
+[08/29 09:30:00     74s] <CMD> all_analysis_views
+[08/29 09:30:00     74s] <CMD> all_setup_analysis_views
+[08/29 09:30:00     74s] <CMD> all_hold_analysis_views
+[08/29 09:30:00     74s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:30:00     74s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:30:09     75s] <CMD> add_repeater -cell BUFX3 -net async_wakeup
+[08/29 09:30:09     75s] #################################################################################
+[08/29 09:30:09     75s] # Design Name: low_power_soc
+[08/29 09:30:09     75s] # Design Mode: 65nm
+[08/29 09:30:09     75s] # Analysis Mode: MMMC OCV 
+[08/29 09:30:09     75s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:30:09     75s] # Signoff Settings: SI On 
+[08/29 09:30:09     75s] #################################################################################
+[08/29 09:30:09     75s] **ERROR: (IMPOPT-6217):	Net 'async_wakeup' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[08/29 09:30:15     76s] <CMD_INTERNAL> redraw
+[08/29 09:30:22     77s] <CMD_INTERNAL> zoomSelected
+[08/29 09:30:22     77s] <CMD_INTERNAL> zoomSelected
+[08/29 09:30:23     77s] <CMD> all_analysis_views
+[08/29 09:30:23     77s] <CMD> all_setup_analysis_views
+[08/29 09:30:23     77s] <CMD> all_hold_analysis_views
+[08/29 09:30:23     77s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:30:23     77s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:30:39     79s] <CMD> add_repeater -cell BUFX12 -net async_wakeup
+[08/29 09:30:39     79s] #################################################################################
+[08/29 09:30:39     79s] # Design Name: low_power_soc
+[08/29 09:30:39     79s] # Design Mode: 65nm
+[08/29 09:30:39     79s] # Analysis Mode: MMMC OCV 
+[08/29 09:30:39     79s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:30:39     79s] # Signoff Settings: SI On 
+[08/29 09:30:39     79s] #################################################################################
+[08/29 09:30:39     79s] **ERROR: (IMPOPT-6217):	Net 'async_wakeup' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[08/29 09:30:41     80s] <CMD_INTERNAL> redraw
+[08/29 09:30:54     81s] <CMD_INTERNAL> zoomSelected
+[08/29 09:30:54     81s] <CMD_INTERNAL> zoomSelected
+[08/29 09:30:54     81s] <CMD> all_analysis_views
+[08/29 09:30:54     81s] <CMD> all_setup_analysis_views
+[08/29 09:30:54     81s] <CMD> all_hold_analysis_views
+[08/29 09:30:54     81s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:30:54     81s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:31:08     83s] <CMD> add_repeater -cell BUFX2 -net async_wakeup
+[08/29 09:31:08     83s] #################################################################################
+[08/29 09:31:08     83s] # Design Name: low_power_soc
+[08/29 09:31:08     83s] # Design Mode: 65nm
+[08/29 09:31:08     83s] # Analysis Mode: MMMC OCV 
+[08/29 09:31:08     83s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:31:08     83s] # Signoff Settings: SI On 
+[08/29 09:31:08     83s] #################################################################################
+[08/29 09:31:08     83s] **ERROR: (IMPOPT-6217):	Net 'async_wakeup' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[08/29 09:31:11     84s] <CMD_INTERNAL> redraw
+[08/29 09:31:17     85s] <CMD> all_analysis_views
+[08/29 09:31:17     85s] <CMD> all_setup_analysis_views
+[08/29 09:31:17     85s] <CMD> all_hold_analysis_views
+[08/29 09:31:17     85s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:31:17     85s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:31:29     86s] <CMD> change_cell -inst {wake_ff_reg[0]} -cell DFFRHQX4
+[08/29 09:31:29     86s] #################################################################################
+[08/29 09:31:29     86s] # Design Name: low_power_soc
+[08/29 09:31:29     86s] # Design Mode: 65nm
+[08/29 09:31:29     86s] # Analysis Mode: MMMC OCV 
+[08/29 09:31:29     86s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:31:29     86s] # Signoff Settings: SI On 
+[08/29 09:31:29     86s] #################################################################################
+[08/29 09:31:29     86s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2361.1M, EPOCH TIME: 1787976089.578910
+[08/29 09:31:29     86s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2361.1M, EPOCH TIME: 1787976089.579023
+[08/29 09:31:29     86s] Processing tracks to init pin-track alignment.
+[08/29 09:31:29     86s] z: 2, totalTracks: 1
+[08/29 09:31:29     86s] z: 4, totalTracks: 1
+[08/29 09:31:29     86s] z: 6, totalTracks: 1
+[08/29 09:31:29     86s] z: 8, totalTracks: 1
+[08/29 09:31:29     86s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:31:29     86s] All LLGs are deleted
+[08/29 09:31:29     86s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:31:29     86s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:31:29     86s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2361.1M, EPOCH TIME: 1787976089.581440
+[08/29 09:31:29     86s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2361.1M, EPOCH TIME: 1787976089.581655
+[08/29 09:31:29     86s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2361.1M, EPOCH TIME: 1787976089.581812
+[08/29 09:31:29     86s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:31:29     86s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:31:29     86s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2361.1M, EPOCH TIME: 1787976089.583174
+[08/29 09:31:29     86s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:31:29     86s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:31:29     86s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2361.1M, EPOCH TIME: 1787976089.604909
+[08/29 09:31:29     86s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:31:29     86s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:31:29     86s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2361.1M, EPOCH TIME: 1787976089.605869
+[08/29 09:31:29     86s] Fast DP-INIT is on for default
+[08/29 09:31:29     86s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:31:29     86s] Atter site array init, number of instance map data is 0.
+[08/29 09:31:29     86s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.027, REAL:0.028, MEM:2361.1M, EPOCH TIME: 1787976089.610841
+[08/29 09:31:29     86s] 
+[08/29 09:31:29     86s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:31:29     86s] 
+[08/29 09:31:29     86s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:31:29     86s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.032, REAL:0.032, MEM:2361.1M, EPOCH TIME: 1787976089.613853
+[08/29 09:31:29     86s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2361.1M, EPOCH TIME: 1787976089.613913
+[08/29 09:31:29     86s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2361.1M, EPOCH TIME: 1787976089.614166
+[08/29 09:31:29     86s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2361.1MB).
+[08/29 09:31:29     86s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.035, REAL:0.035, MEM:2361.1M, EPOCH TIME: 1787976089.614318
+[08/29 09:31:29     86s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.035, REAL:0.035, MEM:2361.1M, EPOCH TIME: 1787976089.614353
+[08/29 09:31:29     86s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver wake_pad/PAD is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/Y is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/PAD is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/Y is found in the delay stage for net async_wakeup.
+[08/29 09:31:29     86s] Dumping Information for Job ...
+[08/29 09:31:29     86s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+
+[08/29 09:31:29     86s] Dumping Information for Job ...
+[08/29 09:31:29     86s] **ERROR: (IMPESI-2221):	No driver wake_pad/PAD is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/Y is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/PAD is found in the delay stage for net async_wakeup.
+**ERROR: (IMPESI-2221):	No driver wake_pad/Y is found in the delay stage for net async_wakeup.
+
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+[08/29 09:31:29     86s] Dumping Information for Job ...
+[08/29 09:31:29     86s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+
+[08/29 09:31:29     86s] Resize wake_ff_reg[0] (DFFRHQX2) to DFFRHQX4.
+[08/29 09:31:29     86s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2418.4M, EPOCH TIME: 1787976089.648628
+[08/29 09:31:29     86s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:31:29     86s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:31:29     86s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:31:29     86s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:31:29     86s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2418.4M, EPOCH TIME: 1787976089.649864
+[08/29 09:31:29     86s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2418.4M, EPOCH TIME: 1787976089.649983
+[08/29 09:31:29     86s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2353.4M, EPOCH TIME: 1787976089.651044
+[08/29 09:31:29     86s] <CMD_INTERNAL> redraw
+[08/29 09:31:40     87s] <CMD> get_time_unit
+[08/29 09:31:40     87s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+[08/29 09:31:40     88s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:31:40     88s] Parsing file top.mtarpt...
+[08/29 09:32:14     92s] <CMD> get_time_unit
+[08/29 09:32:14     92s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:32:14     92s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:32:14     92s] Parsing file top.mtarpt...
+[08/29 09:32:32     95s] <CMD_INTERNAL> zoomSelected
+[08/29 09:32:32     95s] <CMD_INTERNAL> zoomSelected
+[08/29 09:32:33     95s] <CMD_INTERNAL> zoomSelected
+[08/29 09:32:33     95s] <CMD_INTERNAL> zoomSelected
+[08/29 09:32:34     95s] <CMD> all_analysis_views
+[08/29 09:32:34     95s] <CMD> all_setup_analysis_views
+[08/29 09:32:34     95s] <CMD> all_hold_analysis_views
+[08/29 09:32:34     95s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:32:34     95s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:32:48     97s] <CMD> change_cell -inst uart_en_latched_reg -cell DFFNSRX2
+[08/29 09:32:48     97s] #################################################################################
+[08/29 09:32:48     97s] # Design Name: low_power_soc
+[08/29 09:32:48     97s] # Design Mode: 65nm
+[08/29 09:32:48     97s] # Analysis Mode: MMMC OCV 
+[08/29 09:32:48     97s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:32:48     97s] # Signoff Settings: SI On 
+[08/29 09:32:48     97s] #################################################################################
+[08/29 09:32:48     97s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2363.4M, EPOCH TIME: 1787976168.558207
+[08/29 09:32:48     97s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2363.4M, EPOCH TIME: 1787976168.558305
+[08/29 09:32:48     97s] Processing tracks to init pin-track alignment.
+[08/29 09:32:48     97s] z: 2, totalTracks: 1
+[08/29 09:32:48     97s] z: 4, totalTracks: 1
+[08/29 09:32:48     97s] z: 6, totalTracks: 1
+[08/29 09:32:48     97s] z: 8, totalTracks: 1
+[08/29 09:32:48     97s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:32:48     97s] All LLGs are deleted
+[08/29 09:32:48     97s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:32:48     97s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:32:48     97s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2363.4M, EPOCH TIME: 1787976168.560869
+[08/29 09:32:48     97s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2363.4M, EPOCH TIME: 1787976168.561088
+[08/29 09:32:48     97s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2363.4M, EPOCH TIME: 1787976168.561229
+[08/29 09:32:48     97s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:32:48     97s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:32:48     97s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2363.4M, EPOCH TIME: 1787976168.562444
+[08/29 09:32:48     97s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:32:48     97s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:32:48     97s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2363.4M, EPOCH TIME: 1787976168.584734
+[08/29 09:32:48     97s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:32:48     97s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:32:48     97s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2363.4M, EPOCH TIME: 1787976168.585520
+[08/29 09:32:48     97s] Fast DP-INIT is on for default
+[08/29 09:32:48     97s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:32:48     97s] Atter site array init, number of instance map data is 0.
+[08/29 09:32:48     97s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.028, REAL:0.028, MEM:2363.4M, EPOCH TIME: 1787976168.590688
+[08/29 09:32:48     97s] 
+[08/29 09:32:48     97s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:32:48     97s] 
+[08/29 09:32:48     97s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:32:48     97s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.032, REAL:0.033, MEM:2363.4M, EPOCH TIME: 1787976168.593828
+[08/29 09:32:48     97s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2363.4M, EPOCH TIME: 1787976168.593898
+[08/29 09:32:48     97s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2363.4M, EPOCH TIME: 1787976168.594158
+[08/29 09:32:48     97s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2363.4MB).
+[08/29 09:32:48     97s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.036, REAL:0.036, MEM:2363.4M, EPOCH TIME: 1787976168.594314
+[08/29 09:32:48     97s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.036, REAL:0.036, MEM:2363.4M, EPOCH TIME: 1787976168.594350
+[08/29 09:32:48     97s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+[08/29 09:32:48     97s] Dumping Information for Job ...
+[08/29 09:32:48     97s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+
+[08/29 09:32:48     97s] Resize uart_en_latched_reg (DFFNSRX4) to DFFNSRX2.
+[08/29 09:32:48     97s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2422.7M, EPOCH TIME: 1787976168.644161
+[08/29 09:32:48     97s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:32:48     97s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:32:48     97s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:32:48     97s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:32:48     97s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2422.7M, EPOCH TIME: 1787976168.645348
+[08/29 09:32:48     97s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2422.7M, EPOCH TIME: 1787976168.645465
+[08/29 09:32:48     97s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2361.7M, EPOCH TIME: 1787976168.646498
+[08/29 09:32:48     97s] <CMD_INTERNAL> redraw
+[08/29 09:32:58     98s] <CMD> get_time_unit
+[08/29 09:32:58     98s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:32:58     98s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:32:58     98s] Parsing file top.mtarpt...
+[08/29 09:33:19    101s] <CMD_INTERNAL> zoomSelected
+[08/29 09:33:19    101s] <CMD_INTERNAL> zoomSelected
+[08/29 09:33:20    101s] <CMD> all_analysis_views
+[08/29 09:33:20    101s] <CMD> all_setup_analysis_views
+[08/29 09:33:20    101s] <CMD> all_hold_analysis_views
+[08/29 09:33:20    101s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:33:20    101s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:33:30    102s] <CMD> change_cell -inst uart_en_latched_reg -cell DFFNSRX4
+[08/29 09:33:30    102s] #################################################################################
+[08/29 09:33:30    102s] # Design Name: low_power_soc
+[08/29 09:33:30    102s] # Design Mode: 65nm
+[08/29 09:33:30    102s] # Analysis Mode: MMMC OCV 
+[08/29 09:33:30    102s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:33:30    102s] # Signoff Settings: SI On 
+[08/29 09:33:30    102s] #################################################################################
+[08/29 09:33:30    102s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2371.7M, EPOCH TIME: 1787976210.172378
+[08/29 09:33:30    102s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2371.7M, EPOCH TIME: 1787976210.172516
+[08/29 09:33:30    102s] Processing tracks to init pin-track alignment.
+[08/29 09:33:30    102s] z: 2, totalTracks: 1
+[08/29 09:33:30    102s] z: 4, totalTracks: 1
+[08/29 09:33:30    102s] z: 6, totalTracks: 1
+[08/29 09:33:30    102s] z: 8, totalTracks: 1
+[08/29 09:33:30    102s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:33:30    102s] All LLGs are deleted
+[08/29 09:33:30    102s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:33:30    102s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:33:30    102s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2371.7M, EPOCH TIME: 1787976210.174750
+[08/29 09:33:30    102s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2371.7M, EPOCH TIME: 1787976210.175013
+[08/29 09:33:30    102s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2371.7M, EPOCH TIME: 1787976210.175174
+[08/29 09:33:30    102s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:33:30    102s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:33:30    102s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2371.7M, EPOCH TIME: 1787976210.176359
+[08/29 09:33:30    102s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:33:30    102s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:33:30    102s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2371.7M, EPOCH TIME: 1787976210.198342
+[08/29 09:33:30    102s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:33:30    102s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:33:30    102s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2371.7M, EPOCH TIME: 1787976210.199133
+[08/29 09:33:30    102s] Fast DP-INIT is on for default
+[08/29 09:33:30    102s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:33:30    102s] Atter site array init, number of instance map data is 0.
+[08/29 09:33:30    102s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.028, REAL:0.028, MEM:2371.7M, EPOCH TIME: 1787976210.204557
+[08/29 09:33:30    102s] 
+[08/29 09:33:30    102s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:33:30    102s] 
+[08/29 09:33:30    102s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:33:30    102s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.033, REAL:0.033, MEM:2371.7M, EPOCH TIME: 1787976210.208109
+[08/29 09:33:30    102s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2371.7M, EPOCH TIME: 1787976210.208172
+[08/29 09:33:30    102s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2371.7M, EPOCH TIME: 1787976210.208594
+[08/29 09:33:30    102s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2371.7MB).
+[08/29 09:33:30    102s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.036, REAL:0.036, MEM:2371.7M, EPOCH TIME: 1787976210.208741
+[08/29 09:33:30    102s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.036, REAL:0.036, MEM:2371.7M, EPOCH TIME: 1787976210.208778
+[08/29 09:33:30    102s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+[08/29 09:33:30    102s] Dumping Information for Job ...
+[08/29 09:33:30    102s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+
+[08/29 09:33:30    102s] Resize uart_en_latched_reg (DFFNSRX2) to DFFNSRX4.
+[08/29 09:33:30    102s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2428.9M, EPOCH TIME: 1787976210.230410
+[08/29 09:33:30    102s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:33:30    102s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:33:30    102s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:33:30    102s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:33:30    102s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2428.9M, EPOCH TIME: 1787976210.231631
+[08/29 09:33:30    102s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2428.9M, EPOCH TIME: 1787976210.231747
+[08/29 09:33:30    102s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.003, REAL:0.003, MEM:2365.9M, EPOCH TIME: 1787976210.232921
+[08/29 09:33:30    102s] <CMD_INTERNAL> redraw
+[08/29 09:33:37    103s] <CMD> get_time_unit
+[08/29 09:33:37    103s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:33:37    103s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:33:37    103s] Parsing file top.mtarpt...
+[08/29 09:34:00    107s] <CMD_INTERNAL> zoomSelected
+[08/29 09:34:00    107s] <CMD_INTERNAL> zoomSelected
+[08/29 09:34:01    107s] <CMD> all_analysis_views
+[08/29 09:34:01    107s] <CMD> all_setup_analysis_views
+[08/29 09:34:01    107s] <CMD> all_hold_analysis_views
+[08/29 09:34:01    107s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:34:01    107s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:34:13    108s] <CMD> change_cell -inst {wake_ff_reg[1]} -cell DFFRHQX2
+[08/29 09:34:13    108s] #################################################################################
+[08/29 09:34:13    108s] # Design Name: low_power_soc
+[08/29 09:34:13    108s] # Design Mode: 65nm
+[08/29 09:34:13    108s] # Analysis Mode: MMMC OCV 
+[08/29 09:34:13    108s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:34:13    108s] # Signoff Settings: SI On 
+[08/29 09:34:13    108s] #################################################################################
+[08/29 09:34:13    108s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2375.9M, EPOCH TIME: 1787976253.137755
+[08/29 09:34:13    108s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2375.9M, EPOCH TIME: 1787976253.137876
+[08/29 09:34:13    108s] Processing tracks to init pin-track alignment.
+[08/29 09:34:13    108s] z: 2, totalTracks: 1
+[08/29 09:34:13    108s] z: 4, totalTracks: 1
+[08/29 09:34:13    108s] z: 6, totalTracks: 1
+[08/29 09:34:13    108s] z: 8, totalTracks: 1
+[08/29 09:34:13    108s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:34:13    108s] All LLGs are deleted
+[08/29 09:34:13    108s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:34:13    108s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:34:13    108s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2375.9M, EPOCH TIME: 1787976253.140066
+[08/29 09:34:13    108s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2375.9M, EPOCH TIME: 1787976253.140352
+[08/29 09:34:13    108s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2375.9M, EPOCH TIME: 1787976253.140511
+[08/29 09:34:13    108s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:34:13    108s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:34:13    108s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2375.9M, EPOCH TIME: 1787976253.141660
+[08/29 09:34:13    108s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:34:13    108s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:34:13    108s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2375.9M, EPOCH TIME: 1787976253.163536
+[08/29 09:34:13    108s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:34:13    108s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:34:13    108s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2375.9M, EPOCH TIME: 1787976253.164290
+[08/29 09:34:13    108s] Fast DP-INIT is on for default
+[08/29 09:34:13    108s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:34:13    108s] Atter site array init, number of instance map data is 0.
+[08/29 09:34:13    108s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.028, REAL:0.028, MEM:2375.9M, EPOCH TIME: 1787976253.169565
+[08/29 09:34:13    108s] 
+[08/29 09:34:13    108s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:34:13    108s] 
+[08/29 09:34:13    108s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:34:13    108s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.032, REAL:0.032, MEM:2375.9M, EPOCH TIME: 1787976253.172955
+[08/29 09:34:13    108s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2375.9M, EPOCH TIME: 1787976253.173019
+[08/29 09:34:13    108s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2375.9M, EPOCH TIME: 1787976253.173500
+[08/29 09:34:13    108s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2375.9MB).
+[08/29 09:34:13    108s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.036, REAL:0.036, MEM:2375.9M, EPOCH TIME: 1787976253.173658
+[08/29 09:34:13    108s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.036, REAL:0.036, MEM:2375.9M, EPOCH TIME: 1787976253.173696
+[08/29 09:34:13    108s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+[08/29 09:34:13    108s] Dumping Information for Job ...
+[08/29 09:34:13    108s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+
+[08/29 09:34:13    108s] Dumping Information for Job ...
+[08/29 09:34:13    108s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+
+[08/29 09:34:13    108s] Resize wake_ff_reg[1] (DFFRHQX1) to DFFRHQX2.
+[08/29 09:34:13    108s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2433.2M, EPOCH TIME: 1787976253.212706
+[08/29 09:34:13    108s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:34:13    108s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:34:13    108s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:34:13    108s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:34:13    108s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2433.2M, EPOCH TIME: 1787976253.213918
+[08/29 09:34:13    108s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2433.2M, EPOCH TIME: 1787976253.214036
+[08/29 09:34:13    108s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2368.2M, EPOCH TIME: 1787976253.215110
+[08/29 09:34:13    108s] <CMD_INTERNAL> redraw
+[08/29 09:34:20    109s] <CMD> get_time_unit
+[08/29 09:34:20    109s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:34:20    109s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:34:20    109s] Parsing file top.mtarpt...
+[08/29 09:34:31    111s] <CMD_INTERNAL> zoomSelected
+[08/29 09:34:31    111s] <CMD_INTERNAL> zoomSelected
+[08/29 09:34:34    111s] <CMD> all_analysis_views
+[08/29 09:34:34    111s] <CMD> all_setup_analysis_views
+[08/29 09:34:34    111s] <CMD> all_hold_analysis_views
+[08/29 09:34:34    111s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:34:34    111s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:35:07    115s] <CMD> change_cell -inst {wake_ff_reg[1]} -cell DFFRHQX4
+[08/29 09:35:07    115s] #################################################################################
+[08/29 09:35:07    115s] # Design Name: low_power_soc
+[08/29 09:35:07    115s] # Design Mode: 65nm
+[08/29 09:35:07    115s] # Analysis Mode: MMMC OCV 
+[08/29 09:35:07    115s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:35:07    115s] # Signoff Settings: SI On 
+[08/29 09:35:07    115s] #################################################################################
+[08/29 09:35:07    115s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2378.2M, EPOCH TIME: 1787976307.736515
+[08/29 09:35:07    115s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2378.2M, EPOCH TIME: 1787976307.736617
+[08/29 09:35:07    115s] Processing tracks to init pin-track alignment.
+[08/29 09:35:07    115s] z: 2, totalTracks: 1
+[08/29 09:35:07    115s] z: 4, totalTracks: 1
+[08/29 09:35:07    115s] z: 6, totalTracks: 1
+[08/29 09:35:07    115s] z: 8, totalTracks: 1
+[08/29 09:35:07    115s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:35:07    115s] All LLGs are deleted
+[08/29 09:35:07    115s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:07    115s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:07    115s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2378.2M, EPOCH TIME: 1787976307.738921
+[08/29 09:35:07    115s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2378.2M, EPOCH TIME: 1787976307.739152
+[08/29 09:35:07    115s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2378.2M, EPOCH TIME: 1787976307.739289
+[08/29 09:35:07    115s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:07    115s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:07    115s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2378.2M, EPOCH TIME: 1787976307.740521
+[08/29 09:35:07    115s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:35:07    115s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:35:07    115s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2378.2M, EPOCH TIME: 1787976307.762408
+[08/29 09:35:07    115s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:35:07    115s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:35:07    115s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2378.2M, EPOCH TIME: 1787976307.763174
+[08/29 09:35:07    115s] Fast DP-INIT is on for default
+[08/29 09:35:07    115s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:35:07    115s] Atter site array init, number of instance map data is 0.
+[08/29 09:35:07    115s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.028, REAL:0.028, MEM:2378.2M, EPOCH TIME: 1787976307.768513
+[08/29 09:35:07    115s] 
+[08/29 09:35:07    115s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:35:07    115s] 
+[08/29 09:35:07    115s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:35:07    115s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.032, REAL:0.032, MEM:2378.2M, EPOCH TIME: 1787976307.771667
+[08/29 09:35:07    115s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2378.2M, EPOCH TIME: 1787976307.771724
+[08/29 09:35:07    115s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2378.2M, EPOCH TIME: 1787976307.772117
+[08/29 09:35:07    115s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2378.2MB).
+[08/29 09:35:07    115s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.036, REAL:0.036, MEM:2378.2M, EPOCH TIME: 1787976307.772294
+[08/29 09:35:07    115s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.036, REAL:0.036, MEM:2378.2M, EPOCH TIME: 1787976307.772332
+[08/29 09:35:07    115s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+[08/29 09:35:07    115s] Dumping Information for Job ...
+[08/29 09:35:07    115s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+
+[08/29 09:35:07    115s] Dumping Information for Job ...
+[08/29 09:35:07    115s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+[08/29 09:35:07    115s] Dumping Information for Job ...
+[08/29 09:35:07    115s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+
+[08/29 09:35:07    115s] Resize wake_ff_reg[1] (DFFRHQX2) to DFFRHQX4.
+[08/29 09:35:07    115s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2435.4M, EPOCH TIME: 1787976307.821540
+[08/29 09:35:07    115s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:35:07    115s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:07    115s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:07    115s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:07    115s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2435.4M, EPOCH TIME: 1787976307.822724
+[08/29 09:35:07    115s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2435.4M, EPOCH TIME: 1787976307.822875
+[08/29 09:35:07    115s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2370.4M, EPOCH TIME: 1787976307.823875
+[08/29 09:35:07    115s] <CMD_INTERNAL> redraw
+[08/29 09:35:15    116s] <CMD> get_time_unit
+[08/29 09:35:15    116s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:35:15    116s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:35:15    116s] Parsing file top.mtarpt...
+[08/29 09:35:24    118s] <CMD_INTERNAL> zoomSelected
+[08/29 09:35:24    118s] <CMD_INTERNAL> zoomSelected
+[08/29 09:35:25    118s] <CMD> all_analysis_views
+[08/29 09:35:25    118s] <CMD> all_setup_analysis_views
+[08/29 09:35:25    118s] <CMD> all_hold_analysis_views
+[08/29 09:35:25    118s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:35:25    118s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:35:38    119s] <CMD> change_cell -inst {wake_ff_reg[1]} -cell DFFRHQX8
+[08/29 09:35:38    119s] #################################################################################
+[08/29 09:35:38    119s] # Design Name: low_power_soc
+[08/29 09:35:38    119s] # Design Mode: 65nm
+[08/29 09:35:38    119s] # Analysis Mode: MMMC OCV 
+[08/29 09:35:38    119s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:35:38    119s] # Signoff Settings: SI On 
+[08/29 09:35:38    119s] #################################################################################
+[08/29 09:35:38    119s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2380.4M, EPOCH TIME: 1787976338.666224
+[08/29 09:35:38    119s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2380.4M, EPOCH TIME: 1787976338.666323
+[08/29 09:35:38    119s] Processing tracks to init pin-track alignment.
+[08/29 09:35:38    119s] z: 2, totalTracks: 1
+[08/29 09:35:38    119s] z: 4, totalTracks: 1
+[08/29 09:35:38    119s] z: 6, totalTracks: 1
+[08/29 09:35:38    119s] z: 8, totalTracks: 1
+[08/29 09:35:38    119s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:35:38    119s] All LLGs are deleted
+[08/29 09:35:38    119s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:38    119s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:38    119s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2380.4M, EPOCH TIME: 1787976338.668548
+[08/29 09:35:38    119s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2380.4M, EPOCH TIME: 1787976338.668799
+[08/29 09:35:38    119s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2380.4M, EPOCH TIME: 1787976338.668970
+[08/29 09:35:38    119s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:38    119s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:38    119s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2380.4M, EPOCH TIME: 1787976338.670186
+[08/29 09:35:38    119s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:35:38    119s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:35:38    119s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2380.4M, EPOCH TIME: 1787976338.692297
+[08/29 09:35:38    119s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:35:38    119s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:35:38    119s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2380.4M, EPOCH TIME: 1787976338.693127
+[08/29 09:35:38    119s] Fast DP-INIT is on for default
+[08/29 09:35:38    119s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:35:38    119s] Atter site array init, number of instance map data is 0.
+[08/29 09:35:38    119s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.028, REAL:0.028, MEM:2380.4M, EPOCH TIME: 1787976338.698535
+[08/29 09:35:38    119s] 
+[08/29 09:35:38    119s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:35:38    119s] 
+[08/29 09:35:38    119s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:35:38    119s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.032, REAL:0.033, MEM:2380.4M, EPOCH TIME: 1787976338.701918
+[08/29 09:35:38    119s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2380.4M, EPOCH TIME: 1787976338.701978
+[08/29 09:35:38    119s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2380.4M, EPOCH TIME: 1787976338.702240
+[08/29 09:35:38    119s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2380.4MB).
+[08/29 09:35:38    119s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.036, REAL:0.036, MEM:2380.4M, EPOCH TIME: 1787976338.702391
+[08/29 09:35:38    119s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.036, REAL:0.036, MEM:2380.4M, EPOCH TIME: 1787976338.702426
+[08/29 09:35:38    120s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+[08/29 09:35:38    120s] Dumping Information for Job ...
+[08/29 09:35:38    120s] **ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/PAD is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+**ERROR: (IMPESI-2221):	No driver rstn_pad/Y is found in the delay stage for net rst_n.
+
+[08/29 09:35:38    120s] Dumping Information for Job ...
+[08/29 09:35:38    120s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+[08/29 09:35:38    120s] Dumping Information for Job ...
+[08/29 09:35:38    120s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+
+[08/29 09:35:38    120s] Resize wake_ff_reg[1] (DFFRHQX4) to DFFRHQX8.
+[08/29 09:35:38    120s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2437.6M, EPOCH TIME: 1787976338.751735
+[08/29 09:35:38    120s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:35:38    120s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:38    120s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:38    120s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:35:38    120s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2437.6M, EPOCH TIME: 1787976338.752944
+[08/29 09:35:38    120s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2437.6M, EPOCH TIME: 1787976338.753063
+[08/29 09:35:38    120s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2370.6M, EPOCH TIME: 1787976338.754162
+[08/29 09:35:38    120s] <CMD_INTERNAL> redraw
+[08/29 09:35:48    121s] <CMD> get_time_unit
+[08/29 09:35:48    121s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:35:48    121s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:35:48    121s] Parsing file top.mtarpt...
+[08/29 09:36:00    123s] <CMD> get_time_unit
+[08/29 09:36:00    123s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+[08/29 09:36:00    123s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:36:00    123s] Parsing file top.mtarpt...
+[08/29 09:36:09    124s] <CMD_INTERNAL> zoomSelected
+[08/29 09:36:09    124s] <CMD_INTERNAL> zoomSelected
+[08/29 09:36:42    128s] <CMD> get_time_unit
+[08/29 09:36:42    128s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:36:42    128s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:36:42    128s] Parsing file top.mtarpt...
+[08/29 09:36:56    130s] <CMD_INTERNAL> zoomSelected
+[08/29 09:36:56    130s] <CMD_INTERNAL> zoomSelected
+[08/29 09:36:57    130s] <CMD> all_analysis_views
+[08/29 09:36:57    130s] <CMD> all_setup_analysis_views
+[08/29 09:36:57    130s] <CMD> all_hold_analysis_views
+[08/29 09:36:57    130s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:36:57    130s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:37:39    136s] <CMD_INTERNAL> zoomSelected
+[08/29 09:37:39    136s] <CMD_INTERNAL> zoomSelected
+[08/29 09:37:47    137s] <CMD> all_analysis_views
+[08/29 09:37:47    137s] <CMD> all_setup_analysis_views
+[08/29 09:37:47    137s] <CMD> all_hold_analysis_views
+[08/29 09:37:47    137s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:37:47    137s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:37:57    138s] <CMD> all_analysis_views
+[08/29 09:37:57    138s] <CMD> all_setup_analysis_views
+[08/29 09:37:57    138s] <CMD> all_hold_analysis_views
+[08/29 09:37:57    138s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:37:57    138s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:38:11    140s] <CMD> change_cell -inst g242 -cell CLKINVX20
+[08/29 09:38:11    140s] #################################################################################
+[08/29 09:38:11    140s] # Design Name: low_power_soc
+[08/29 09:38:11    140s] # Design Mode: 65nm
+[08/29 09:38:11    140s] # Analysis Mode: MMMC OCV 
+[08/29 09:38:11    140s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:38:11    140s] # Signoff Settings: SI On 
+[08/29 09:38:11    140s] #################################################################################
+[08/29 09:38:11    140s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2380.6M, EPOCH TIME: 1787976491.180421
+[08/29 09:38:11    140s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2380.6M, EPOCH TIME: 1787976491.180512
+[08/29 09:38:11    140s] Processing tracks to init pin-track alignment.
+[08/29 09:38:11    140s] z: 2, totalTracks: 1
+[08/29 09:38:11    140s] z: 4, totalTracks: 1
+[08/29 09:38:11    140s] z: 6, totalTracks: 1
+[08/29 09:38:11    140s] z: 8, totalTracks: 1
+[08/29 09:38:11    140s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:38:11    140s] All LLGs are deleted
+[08/29 09:38:11    140s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:11    140s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:11    140s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2380.6M, EPOCH TIME: 1787976491.183193
+[08/29 09:38:11    140s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2380.6M, EPOCH TIME: 1787976491.183413
+[08/29 09:38:11    140s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2380.6M, EPOCH TIME: 1787976491.183546
+[08/29 09:38:11    140s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:11    140s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:11    140s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2380.6M, EPOCH TIME: 1787976491.184660
+[08/29 09:38:11    140s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:38:11    140s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:38:11    140s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2380.6M, EPOCH TIME: 1787976491.206414
+[08/29 09:38:11    140s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:38:11    140s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:38:11    140s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2380.6M, EPOCH TIME: 1787976491.207149
+[08/29 09:38:11    140s] Fast DP-INIT is on for default
+[08/29 09:38:11    140s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:38:11    140s] Atter site array init, number of instance map data is 0.
+[08/29 09:38:11    140s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.028, REAL:0.028, MEM:2380.6M, EPOCH TIME: 1787976491.212401
+[08/29 09:38:11    140s] 
+[08/29 09:38:11    140s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:38:11    140s] 
+[08/29 09:38:11    140s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:38:11    140s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.032, REAL:0.032, MEM:2380.6M, EPOCH TIME: 1787976491.215698
+[08/29 09:38:11    140s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2380.6M, EPOCH TIME: 1787976491.215756
+[08/29 09:38:11    140s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.001, REAL:0.001, MEM:2380.6M, EPOCH TIME: 1787976491.216352
+[08/29 09:38:11    140s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2380.6MB).
+[08/29 09:38:11    140s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.036, REAL:0.036, MEM:2380.6M, EPOCH TIME: 1787976491.216507
+[08/29 09:38:11    140s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.036, REAL:0.036, MEM:2380.6M, EPOCH TIME: 1787976491.216546
+[08/29 09:38:11    140s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+[08/29 09:38:11    140s] Dumping Information for Job ...
+[08/29 09:38:11    140s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+
+[08/29 09:38:11    140s] Resize g242 (CLKINVX8) to CLKINVX20.
+[08/29 09:38:11    140s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2437.9M, EPOCH TIME: 1787976491.240218
+[08/29 09:38:11    140s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:38:11    140s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:11    140s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:11    140s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:11    140s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2437.9M, EPOCH TIME: 1787976491.241422
+[08/29 09:38:11    140s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2437.9M, EPOCH TIME: 1787976491.241538
+[08/29 09:38:11    140s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2372.9M, EPOCH TIME: 1787976491.242538
+[08/29 09:38:11    140s] <CMD_INTERNAL> redraw
+[08/29 09:38:20    141s] <CMD> get_time_unit
+[08/29 09:38:20    141s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:38:20    141s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:38:20    141s] Parsing file top.mtarpt...
+[08/29 09:38:37    143s] <CMD_INTERNAL> zoomSelected
+[08/29 09:38:37    143s] <CMD_INTERNAL> zoomSelected
+[08/29 09:38:37    143s] <CMD_INTERNAL> zoomSelected
+[08/29 09:38:38    144s] <CMD> all_analysis_views
+[08/29 09:38:38    144s] <CMD> all_setup_analysis_views
+[08/29 09:38:38    144s] <CMD> all_hold_analysis_views
+[08/29 09:38:38    144s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:38:38    144s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:38:49    145s] <CMD> change_cell -inst FE_RC_0_0 -cell NAND2X6
+[08/29 09:38:49    145s] #################################################################################
+[08/29 09:38:49    145s] # Design Name: low_power_soc
+[08/29 09:38:49    145s] # Design Mode: 65nm
+[08/29 09:38:49    145s] # Analysis Mode: MMMC OCV 
+[08/29 09:38:49    145s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:38:49    145s] # Signoff Settings: SI On 
+[08/29 09:38:49    145s] #################################################################################
+[08/29 09:38:49    145s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2382.9M, EPOCH TIME: 1787976529.378515
+[08/29 09:38:49    145s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2382.9M, EPOCH TIME: 1787976529.378610
+[08/29 09:38:49    145s] Processing tracks to init pin-track alignment.
+[08/29 09:38:49    145s] z: 2, totalTracks: 1
+[08/29 09:38:49    145s] z: 4, totalTracks: 1
+[08/29 09:38:49    145s] z: 6, totalTracks: 1
+[08/29 09:38:49    145s] z: 8, totalTracks: 1
+[08/29 09:38:49    145s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:38:49    145s] All LLGs are deleted
+[08/29 09:38:49    145s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:49    145s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:49    145s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2382.9M, EPOCH TIME: 1787976529.380897
+[08/29 09:38:49    145s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2382.9M, EPOCH TIME: 1787976529.381100
+[08/29 09:38:49    145s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2382.9M, EPOCH TIME: 1787976529.381235
+[08/29 09:38:49    145s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:49    145s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:49    145s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2382.9M, EPOCH TIME: 1787976529.382427
+[08/29 09:38:49    145s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:38:49    145s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:38:49    145s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2382.9M, EPOCH TIME: 1787976529.403978
+[08/29 09:38:49    145s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:38:49    145s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:38:49    145s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2382.9M, EPOCH TIME: 1787976529.404588
+[08/29 09:38:49    145s] Fast DP-INIT is on for default
+[08/29 09:38:49    145s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:38:49    145s] Atter site array init, number of instance map data is 0.
+[08/29 09:38:49    145s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.027, REAL:0.027, MEM:2382.9M, EPOCH TIME: 1787976529.409888
+[08/29 09:38:49    145s] 
+[08/29 09:38:49    145s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:38:49    145s] 
+[08/29 09:38:49    145s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:38:49    145s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.032, REAL:0.032, MEM:2382.9M, EPOCH TIME: 1787976529.413150
+[08/29 09:38:49    145s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2382.9M, EPOCH TIME: 1787976529.413251
+[08/29 09:38:49    145s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2382.9M, EPOCH TIME: 1787976529.413567
+[08/29 09:38:49    145s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2382.9MB).
+[08/29 09:38:49    145s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.035, REAL:0.035, MEM:2382.9M, EPOCH TIME: 1787976529.413731
+[08/29 09:38:49    145s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.035, REAL:0.035, MEM:2382.9M, EPOCH TIME: 1787976529.413770
+[08/29 09:38:49    145s] Resize FE_RC_0_0 (NAND2X4) to NAND2X6.
+[08/29 09:38:49    145s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2440.1M, EPOCH TIME: 1787976529.428650
+[08/29 09:38:49    145s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:38:49    145s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:49    145s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:49    145s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:49    145s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2440.1M, EPOCH TIME: 1787976529.429764
+[08/29 09:38:49    145s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2440.1M, EPOCH TIME: 1787976529.429915
+[08/29 09:38:49    145s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2375.1M, EPOCH TIME: 1787976529.430842
+[08/29 09:38:49    145s] <CMD_INTERNAL> redraw
+[08/29 09:38:50    145s] <CMD> change_cell -inst FE_RC_0_0 -cell NAND2X6
+[08/29 09:38:50    145s] #################################################################################
+[08/29 09:38:50    145s] # Design Name: low_power_soc
+[08/29 09:38:50    145s] # Design Mode: 65nm
+[08/29 09:38:50    145s] # Analysis Mode: MMMC OCV 
+[08/29 09:38:50    145s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:38:50    145s] # Signoff Settings: SI On 
+[08/29 09:38:50    145s] #################################################################################
+[08/29 09:38:50    145s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2375.1M, EPOCH TIME: 1787976530.661280
+[08/29 09:38:50    145s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2375.1M, EPOCH TIME: 1787976530.661441
+[08/29 09:38:50    145s] Processing tracks to init pin-track alignment.
+[08/29 09:38:50    145s] z: 2, totalTracks: 1
+[08/29 09:38:50    145s] z: 4, totalTracks: 1
+[08/29 09:38:50    145s] z: 6, totalTracks: 1
+[08/29 09:38:50    145s] z: 8, totalTracks: 1
+[08/29 09:38:50    145s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:38:50    145s] All LLGs are deleted
+[08/29 09:38:50    145s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:50    145s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:50    145s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2375.1M, EPOCH TIME: 1787976530.663445
+[08/29 09:38:50    145s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2375.1M, EPOCH TIME: 1787976530.663598
+[08/29 09:38:50    145s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2375.1M, EPOCH TIME: 1787976530.663733
+[08/29 09:38:50    145s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:50    145s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:50    145s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2375.1M, EPOCH TIME: 1787976530.664917
+[08/29 09:38:50    145s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:38:50    145s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:38:50    145s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2375.1M, EPOCH TIME: 1787976530.686165
+[08/29 09:38:50    145s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:38:50    145s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:38:50    145s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2375.1M, EPOCH TIME: 1787976530.686768
+[08/29 09:38:50    145s] Fast DP-INIT is on for default
+[08/29 09:38:50    145s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:38:50    145s] Atter site array init, number of instance map data is 0.
+[08/29 09:38:50    145s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.027, REAL:0.027, MEM:2375.1M, EPOCH TIME: 1787976530.691760
+[08/29 09:38:50    145s] 
+[08/29 09:38:50    145s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:38:50    145s] 
+[08/29 09:38:50    145s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:38:50    145s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.031, REAL:0.031, MEM:2375.1M, EPOCH TIME: 1787976530.694947
+[08/29 09:38:50    145s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2375.1M, EPOCH TIME: 1787976530.695006
+[08/29 09:38:50    145s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2375.1M, EPOCH TIME: 1787976530.695225
+[08/29 09:38:50    145s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2375.1MB).
+[08/29 09:38:50    145s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.034, REAL:0.034, MEM:2375.1M, EPOCH TIME: 1787976530.695347
+[08/29 09:38:50    145s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.034, REAL:0.034, MEM:2375.1M, EPOCH TIME: 1787976530.695383
+[08/29 09:38:50    145s] Resize FE_RC_0_0 (NAND2X6) to NAND2X6.
+[08/29 09:38:50    145s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2375.1M, EPOCH TIME: 1787976530.695514
+[08/29 09:38:50    145s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:38:50    145s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:50    145s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:50    145s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:38:50    145s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2375.1M, EPOCH TIME: 1787976530.696535
+[08/29 09:38:50    145s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2375.1M, EPOCH TIME: 1787976530.696639
+[08/29 09:38:50    145s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2375.1M, EPOCH TIME: 1787976530.697418
+[08/29 09:38:50    145s] <CMD_INTERNAL> redraw
+[08/29 09:38:59    146s] <CMD> get_time_unit
+[08/29 09:38:59    146s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:38:59    146s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:38:59    146s] Parsing file top.mtarpt...
+[08/29 09:39:07    148s] <CMD_INTERNAL> zoomSelected
+[08/29 09:39:07    148s] <CMD_INTERNAL> zoomSelected
+[08/29 09:39:14    149s] <CMD> all_analysis_views
+[08/29 09:39:14    149s] <CMD> all_setup_analysis_views
+[08/29 09:39:14    149s] <CMD> all_hold_analysis_views
+[08/29 09:39:14    149s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:39:14    149s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:39:27    150s] <CMD> change_cell -inst g242 -cell CLKINVX8
+[08/29 09:39:27    150s] #################################################################################
+[08/29 09:39:27    150s] # Design Name: low_power_soc
+[08/29 09:39:27    150s] # Design Mode: 65nm
+[08/29 09:39:27    150s] # Analysis Mode: MMMC OCV 
+[08/29 09:39:27    150s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:39:27    150s] # Signoff Settings: SI On 
+[08/29 09:39:27    150s] #################################################################################
+[08/29 09:39:27    150s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2385.1M, EPOCH TIME: 1787976567.860181
+[08/29 09:39:27    150s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2385.1M, EPOCH TIME: 1787976567.860277
+[08/29 09:39:27    150s] Processing tracks to init pin-track alignment.
+[08/29 09:39:27    150s] z: 2, totalTracks: 1
+[08/29 09:39:27    150s] z: 4, totalTracks: 1
+[08/29 09:39:27    150s] z: 6, totalTracks: 1
+[08/29 09:39:27    150s] z: 8, totalTracks: 1
+[08/29 09:39:27    150s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:39:27    150s] All LLGs are deleted
+[08/29 09:39:27    150s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:27    150s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:27    150s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2385.1M, EPOCH TIME: 1787976567.862489
+[08/29 09:39:27    150s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2385.1M, EPOCH TIME: 1787976567.862682
+[08/29 09:39:27    150s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2385.1M, EPOCH TIME: 1787976567.862856
+[08/29 09:39:27    150s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:27    150s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:27    150s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2385.1M, EPOCH TIME: 1787976567.864136
+[08/29 09:39:27    150s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:39:27    150s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:39:27    150s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2385.1M, EPOCH TIME: 1787976567.885901
+[08/29 09:39:27    150s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:39:27    150s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:39:27    150s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2385.1M, EPOCH TIME: 1787976567.886568
+[08/29 09:39:27    150s] Fast DP-INIT is on for default
+[08/29 09:39:27    150s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:39:27    150s] Atter site array init, number of instance map data is 0.
+[08/29 09:39:27    150s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.028, REAL:0.028, MEM:2385.1M, EPOCH TIME: 1787976567.892632
+[08/29 09:39:27    150s] 
+[08/29 09:39:27    150s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:39:27    150s] 
+[08/29 09:39:27    150s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:39:27    150s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.032, REAL:0.033, MEM:2385.1M, EPOCH TIME: 1787976567.895878
+[08/29 09:39:27    150s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2385.1M, EPOCH TIME: 1787976567.895941
+[08/29 09:39:27    150s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2385.1M, EPOCH TIME: 1787976567.896283
+[08/29 09:39:27    150s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2385.1MB).
+[08/29 09:39:27    150s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.035, REAL:0.036, MEM:2385.1M, EPOCH TIME: 1787976567.896410
+[08/29 09:39:27    150s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.036, REAL:0.036, MEM:2385.1M, EPOCH TIME: 1787976567.896446
+[08/29 09:39:27    150s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+[08/29 09:39:27    150s] Dumping Information for Job ...
+[08/29 09:39:27    150s] **ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+**ERROR: (IMPESI-2221):	No driver wake_sync_pad/PAD is found in the delay stage for net wake_sync.
+
+[08/29 09:39:27    150s] Resize g242 (CLKINVX20) to CLKINVX8.
+[08/29 09:39:27    150s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2442.4M, EPOCH TIME: 1787976567.920432
+[08/29 09:39:27    150s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:39:27    150s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:27    150s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:27    150s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:27    150s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2442.4M, EPOCH TIME: 1787976567.921603
+[08/29 09:39:27    150s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2442.4M, EPOCH TIME: 1787976567.921719
+[08/29 09:39:27    150s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2375.4M, EPOCH TIME: 1787976567.922712
+[08/29 09:39:27    150s] <CMD_INTERNAL> redraw
+[08/29 09:39:32    151s] <CMD> change_cell -inst {wake_ff_reg[1]} -cell DFFRHQX8
+[08/29 09:39:32    151s] #################################################################################
+[08/29 09:39:32    151s] # Design Name: low_power_soc
+[08/29 09:39:32    151s] # Design Mode: 65nm
+[08/29 09:39:32    151s] # Analysis Mode: MMMC OCV 
+[08/29 09:39:32    151s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:39:32    151s] # Signoff Settings: SI On 
+[08/29 09:39:32    151s] #################################################################################
+[08/29 09:39:32    151s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2375.4M, EPOCH TIME: 1787976572.516898
+[08/29 09:39:32    151s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2375.4M, EPOCH TIME: 1787976572.517070
+[08/29 09:39:32    151s] Processing tracks to init pin-track alignment.
+[08/29 09:39:32    151s] z: 2, totalTracks: 1
+[08/29 09:39:32    151s] z: 4, totalTracks: 1
+[08/29 09:39:32    151s] z: 6, totalTracks: 1
+[08/29 09:39:32    151s] z: 8, totalTracks: 1
+[08/29 09:39:32    151s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:39:32    151s] All LLGs are deleted
+[08/29 09:39:32    151s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:32    151s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:32    151s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2375.4M, EPOCH TIME: 1787976572.519258
+[08/29 09:39:32    151s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2375.4M, EPOCH TIME: 1787976572.519435
+[08/29 09:39:32    151s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2375.4M, EPOCH TIME: 1787976572.519565
+[08/29 09:39:32    151s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:32    151s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:32    151s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2375.4M, EPOCH TIME: 1787976572.520668
+[08/29 09:39:32    151s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:39:32    151s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:39:32    151s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2375.4M, EPOCH TIME: 1787976572.542119
+[08/29 09:39:32    151s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:39:32    151s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:39:32    151s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2375.4M, EPOCH TIME: 1787976572.542708
+[08/29 09:39:32    151s] Fast DP-INIT is on for default
+[08/29 09:39:32    151s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:39:32    151s] Atter site array init, number of instance map data is 0.
+[08/29 09:39:32    151s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.027, REAL:0.027, MEM:2375.4M, EPOCH TIME: 1787976572.548000
+[08/29 09:39:32    151s] 
+[08/29 09:39:32    151s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:39:32    151s] 
+[08/29 09:39:32    151s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:39:32    151s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.032, REAL:0.032, MEM:2375.4M, EPOCH TIME: 1787976572.551221
+[08/29 09:39:32    151s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2375.4M, EPOCH TIME: 1787976572.551285
+[08/29 09:39:32    151s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2375.4M, EPOCH TIME: 1787976572.551540
+[08/29 09:39:32    151s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2375.4MB).
+[08/29 09:39:32    151s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.035, REAL:0.035, MEM:2375.4M, EPOCH TIME: 1787976572.551698
+[08/29 09:39:32    151s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.035, REAL:0.035, MEM:2375.4M, EPOCH TIME: 1787976572.551734
+[08/29 09:39:32    151s] Resize wake_ff_reg[1] (DFFRHQX8) to DFFRHQX8.
+[08/29 09:39:32    151s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2375.4M, EPOCH TIME: 1787976572.551914
+[08/29 09:39:32    151s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:39:32    151s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:32    151s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:32    151s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:39:32    151s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2375.4M, EPOCH TIME: 1787976572.552956
+[08/29 09:39:32    151s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2375.4M, EPOCH TIME: 1787976572.553061
+[08/29 09:39:32    151s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2375.4M, EPOCH TIME: 1787976572.553841
+[08/29 09:39:32    151s] <CMD_INTERNAL> redraw
+[08/29 09:39:40    152s] <CMD> get_time_unit
+[08/29 09:39:40    152s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:39:40    152s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:39:40    152s] Parsing file top.mtarpt...
+[08/29 09:40:00    155s] <CMD_INTERNAL> zoomSelected
+[08/29 09:40:00    155s] <CMD_INTERNAL> zoomSelected
+[08/29 09:40:00    155s] <CMD_INTERNAL> zoomSelected
+[08/29 09:40:01    155s] <CMD> all_analysis_views
+[08/29 09:40:01    155s] <CMD> all_setup_analysis_views
+[08/29 09:40:01    155s] <CMD> all_hold_analysis_views
+[08/29 09:40:01    155s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:40:01    155s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:40:15    157s] <CMD> change_cell -inst g181__2398 -cell AND2X2
+[08/29 09:40:15    157s] #################################################################################
+[08/29 09:40:15    157s] # Design Name: low_power_soc
+[08/29 09:40:15    157s] # Design Mode: 65nm
+[08/29 09:40:15    157s] # Analysis Mode: MMMC OCV 
+[08/29 09:40:15    157s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:40:15    157s] # Signoff Settings: SI On 
+[08/29 09:40:15    157s] #################################################################################
+[08/29 09:40:15    157s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:2385.4M, EPOCH TIME: 1787976615.187276
+[08/29 09:40:15    157s] OPERPROF:   Starting DPlace-Init at level 2, MEM:2385.4M, EPOCH TIME: 1787976615.187380
+[08/29 09:40:15    157s] Processing tracks to init pin-track alignment.
+[08/29 09:40:15    157s] z: 2, totalTracks: 1
+[08/29 09:40:15    157s] z: 4, totalTracks: 1
+[08/29 09:40:15    157s] z: 6, totalTracks: 1
+[08/29 09:40:15    157s] z: 8, totalTracks: 1
+[08/29 09:40:15    157s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[08/29 09:40:15    157s] All LLGs are deleted
+[08/29 09:40:15    157s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:40:15    157s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:40:15    157s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:2385.4M, EPOCH TIME: 1787976615.189582
+[08/29 09:40:15    157s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:2385.4M, EPOCH TIME: 1787976615.189846
+[08/29 09:40:15    157s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:2385.4M, EPOCH TIME: 1787976615.190010
+[08/29 09:40:15    157s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:40:15    157s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:40:15    157s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:2385.4M, EPOCH TIME: 1787976615.191172
+[08/29 09:40:15    157s] Max number of tech site patterns supported in site array is 256.
+[08/29 09:40:15    157s] **ERROR: (IMPSP-365):	Design has inst(s) with SITE 'CoreSiteDouble', but the floorplan has no rows defined for this site. Any locations found for such insts will be illegal; create rows for this site to avoid this.
+Core basic site is CoreSite
+[08/29 09:40:15    157s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:2385.4M, EPOCH TIME: 1787976615.213540
+[08/29 09:40:15    157s] After signature check, allow fast init is true, keep pre-filter is true.
+[08/29 09:40:15    157s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[08/29 09:40:15    157s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.001, REAL:0.001, MEM:2385.4M, EPOCH TIME: 1787976615.214296
+[08/29 09:40:15    157s] Fast DP-INIT is on for default
+[08/29 09:40:15    157s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[08/29 09:40:15    157s] Atter site array init, number of instance map data is 0.
+[08/29 09:40:15    157s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.028, REAL:0.028, MEM:2385.4M, EPOCH TIME: 1787976615.219481
+[08/29 09:40:15    157s] 
+[08/29 09:40:15    157s]  Pre_CCE_Colorizing is not ON! (0:0:574:0)
+[08/29 09:40:15    157s] 
+[08/29 09:40:15    157s]  Skipping Bad Lib Cell Checking (CMU) !
+[08/29 09:40:15    157s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.033, REAL:0.033, MEM:2385.4M, EPOCH TIME: 1787976615.223025
+[08/29 09:40:15    157s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:2385.4M, EPOCH TIME: 1787976615.223094
+[08/29 09:40:15    157s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:2385.4M, EPOCH TIME: 1787976615.223436
+[08/29 09:40:15    157s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=2385.4MB).
+[08/29 09:40:15    157s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.036, REAL:0.036, MEM:2385.4M, EPOCH TIME: 1787976615.223610
+[08/29 09:40:15    157s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.036, REAL:0.036, MEM:2385.4M, EPOCH TIME: 1787976615.223648
+[08/29 09:40:15    157s] Resize g181__2398 (AND2XL) to AND2X2.
+[08/29 09:40:15    157s] OPERPROF: Starting spDPlaceCleanup(partial) at level 1, MEM:2442.6M, EPOCH TIME: 1787976615.230945
+[08/29 09:40:15    157s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:418).
+[08/29 09:40:15    157s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:40:15    157s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:40:15    157s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[08/29 09:40:15    157s] OPERPROF:   Starting spSiteCleanup(false) at level 2, MEM:2442.6M, EPOCH TIME: 1787976615.232050
+[08/29 09:40:15    157s] OPERPROF:   Finished spSiteCleanup(false) at level 2, CPU:0.000, REAL:0.000, MEM:2442.6M, EPOCH TIME: 1787976615.232170
+[08/29 09:40:15    157s] OPERPROF: Finished spDPlaceCleanup(partial) at level 1, CPU:0.002, REAL:0.002, MEM:2377.6M, EPOCH TIME: 1787976615.233159
+[08/29 09:40:15    157s] <CMD_INTERNAL> redraw
+[08/29 09:40:24    158s] <CMD> get_time_unit
+[08/29 09:40:24    158s] <CMD> report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > top.mtarpt
+[08/29 09:40:24    158s] <CMD> load_timing_debug_report -name default_report top.mtarpt -max_path_num 10000 -updateCategory 0
+[08/29 09:40:24    158s] Parsing file top.mtarpt...
+[08/29 09:40:37    160s] <CMD_INTERNAL> zoomSelected
+[08/29 09:40:37    160s] <CMD_INTERNAL> zoomSelected
+[08/29 09:40:46    161s] <CMD> all_analysis_views
+[08/29 09:40:46    161s] <CMD> all_setup_analysis_views
+[08/29 09:40:46    161s] <CMD> all_hold_analysis_views
+[08/29 09:40:46    161s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:40:46    161s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:41:20    165s] <CMD> all_analysis_views
+[08/29 09:41:20    165s] <CMD> all_setup_analysis_views
+[08/29 09:41:20    165s] <CMD> all_hold_analysis_views
+[08/29 09:41:20    165s] <CMD> get_analysis_view $view -delay_corner
+[08/29 09:41:20    165s] <CMD> get_delay_corner $dc -rc_corner
+[08/29 09:41:29    166s] <CMD> add_repeater -cell BUFX2 -net wake_sync
+[08/29 09:41:29    166s] #################################################################################
+[08/29 09:41:29    166s] # Design Name: low_power_soc
+[08/29 09:41:29    166s] # Design Mode: 65nm
+[08/29 09:41:29    166s] # Analysis Mode: MMMC OCV 
+[08/29 09:41:29    166s] # Parasitics Mode: SPEF/RCDB 
+[08/29 09:41:29    166s] # Signoff Settings: SI On 
+[08/29 09:41:29    166s] #################################################################################
+[08/29 09:41:29    166s] **ERROR: (IMPOPT-6217):	Net 'wake_sync' is a multi-driver net, and cannot be buffered by 'add_repeater' command.
+**ERROR: (IMPSYT-7004):	Failed to execute add_repeater command.
+[08/29 09:41:31    167s] <CMD_INTERNAL> redraw
+[08/29 09:44:15    187s] 
+--------------------------------------------------------------------------------
+Exiting Tempus Timing Signoff Solution on Sat Aug 29 09:44:15 2026
+  Total CPU time:     0:03:10
+  Total real time:    0:21:42
+  Peak memory (main): 2008.00MB
+
+[08/29 09:44:15    187s] 
+[08/29 09:44:15    187s] *** Memory Usage v#1 (Current mem = 2387.617M, initial mem = 481.699M) ***
+[08/29 09:44:15    187s] 
+[08/29 09:44:15    187s] *** Summary of all messages that are not suppressed in this session:
+[08/29 09:44:15    187s] Severity  ID               Count  Summary                                  
+[08/29 09:44:15    187s] WARNING   IMPLF-200           26  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[08/29 09:44:15    187s] WARNING   IMPLF-201           10  Pin '%s' in macro '%s' has no ANTENNADIF...
+[08/29 09:44:15    187s] WARNING   IMPFP-3961           6  The techSite '%s' has no related standar...
+[08/29 09:44:15    187s] WARNING   UI-638               1  The %s to the command '%s' %s ignored si...
+[08/29 09:44:15    187s] WARNING   UI-156              71  preference name '%s' is not supported in...
+[08/29 09:44:15    187s] ERROR     IMPSYT-7004         16  %s                                       
+[08/29 09:44:15    187s] WARNING   IMPSYC-3133          2  The unloadTimingCon command is not suppo...
+[08/29 09:44:15    187s] WARNING   IMPSYC-6134          1  Setting analysis mode to %s does not hav...
+[08/29 09:44:15    187s] ERROR     IMPESI-2221         82  No driver %s is found in the delay stage...
+[08/29 09:44:15    187s] ERROR     IMPSP-365           13  Design has inst(s) with SITE '%s', but t...
+[08/29 09:44:15    187s] ERROR     IMPOPT-6217          8  Net '%s' is a multi-driver net, and cann...
+[08/29 09:44:15    187s] WARNING   IMPCCOPT-2332        6  The property %s is deprecated. It still ...
+[08/29 09:44:15    187s] WARNING   NRIF-90              1  Option setNanoRouteMode -routeBottomRout...
+[08/29 09:44:15    187s] WARNING   NRIF-91              1  Option setNanoRouteMode -routeTopRouting...
+[08/29 09:44:15    187s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[08/29 09:44:15    187s] WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+[08/29 09:44:15    187s] WARNING   TCLCMD-1234          1  In multi-mode, multi-corner analysis mod...
+[08/29 09:44:15    187s] WARNING   TCLCMD-1263          1  The -frame parameter is obsolete and wil...
+[08/29 09:44:15    187s] WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+[08/29 09:44:15    187s] *** Message Summary: 131 warning(s), 119 error(s)
+[08/29 09:44:15    187s] 
+[08/29 09:44:15    187s] --- Ending "Tempus Timing Signoff Solution" (totcpu=0:03:08, real=0:21:33, mem=2387.6M) ---

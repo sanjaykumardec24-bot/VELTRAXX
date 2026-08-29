@@ -1,0 +1,593 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "low_power_soc")
+  (DATE "Sat Aug 29 09:19:45 2026")
+  (VENDOR "Cadence Design Systems, Inc.")
+  (PROGRAM "Innovus")
+  (VERSION "v21.15-s110_1 ((64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64))")
+  (DIVIDER /)
+  (VOLTAGE 0.900000::0.900000)
+  (PROCESS "1.000000::1.000000")
+  (TEMPERATURE 125.000000::125.000000)
+  (TIMESCALE 1.0 ns)
+
+  (CELL
+    (CELLTYPE  "low_power_soc")
+    (INSTANCE)
+      (DELAY
+	(ABSOLUTE
+	(INTERCONNECT FE_PSBC23_n_1/Y FE_PSBC21_n_1/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_PSBC23_n_1/Y FE_PSBC22_n_1/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_PSBC22_n_1/Y g232__6783/B  (0.008::0.008) (0.008::0.008))
+	(INTERCONNECT FE_PSBC22_n_1/Y g233__3680/B  (0.007::0.007) (0.007::0.007))
+	(INTERCONNECT FE_PSBC21_n_1/Y g234__1617/B  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT FE_OCPC22_n_1/Y FE_OFC9_n_1_dup/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC9_n_1_dup/Y g235__2802/B  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_OFC9_n_1_dup/Y FE_RC_0_0/B  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_RC_0_0/Y cpu_en_latched_reg/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC8_wake_ff_0/Y wake_ff_reg\[1\]/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OFC17_n_2/Y g235__2802/A  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC14_n_6/Y FE_RC_0_0/A  (0.021::0.021) (0.021::0.021))
+	(INTERCONNECT FE_OFC4_n_4/Y g233__3680/A  (0.023::0.023) (0.024::0.024))
+	(INTERCONNECT FE_OFC15_n_3/Y g234__1617/A  (0.021::0.021) (0.021::0.021))
+	(INTERCONNECT FE_OFC16_n_5/Y g232__6783/A  (0.026::0.026) (0.027::0.027))
+	(INTERCONNECT clk wake_ff_reg\[0\]/CK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk g181__2398/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk g182__5107/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk g183__6260/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk g184__4319/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk g185__8428/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk cpu_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk gpio_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk sram_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk timer_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk uart_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk wake_ff_reg\[1\]/CK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk clk_pad/PAD  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD wake_ff_reg\[0\]/CK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD g181__2398/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD g182__5107/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD g183__6260/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD g184__4319/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD g185__8428/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD cpu_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD gpio_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD sram_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD timer_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD uart_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/PAD wake_ff_reg\[1\]/CK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y wake_ff_reg\[0\]/CK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y g181__2398/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y g182__5107/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y g183__6260/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y g184__4319/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y g185__8428/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y cpu_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y gpio_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y sram_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y timer_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y uart_en_latched_reg/CKN  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT clk_pad/Y wake_ff_reg\[1\]/CK  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT rst_n wake_ff_reg\[0\]/RN  (0.014::0.048) (0.014::0.048))
+	(INTERCONNECT rst_n cpu_en_latched_reg/RN  (0.014::0.048) (0.014::0.048))
+	(INTERCONNECT rst_n gpio_en_latched_reg/RN  (0.009::0.043) (0.009::0.043))
+	(INTERCONNECT rst_n sram_en_latched_reg/RN  (0.011::0.046) (0.011::0.046))
+	(INTERCONNECT rst_n timer_en_latched_reg/RN  (0.007::0.039) (0.007::0.039))
+	(INTERCONNECT rst_n uart_en_latched_reg/RN  (0.016::0.050) (0.016::0.050))
+	(INTERCONNECT rst_n wake_ff_reg\[1\]/RN  (0.016::0.050) (0.016::0.050))
+	(INTERCONNECT rst_n rstn_pad/PAD  (-0.001::0.001) (-0.001::0.001))
+	(INTERCONNECT cpu_enable g236__1705/B  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT cpu_enable cpu_en_pad/PAD  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT sram_enable g239__8246/B  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT sram_enable sram_en_pad/PAD  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT gpio_enable g237__5122/B  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT gpio_enable gpio_en_pad/PAD  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT timer_enable g240__7098/B  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT timer_enable timer_en_pad/PAD  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT uart_enable g241__6131/B  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT uart_enable uart_en_pad/PAD  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT async_wakeup wake_ff_reg\[0\]/D  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT async_wakeup wake_pad/PAD  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT test_enable g236__1705/A  (0.058::0.058) (0.058::0.058))
+	(INTERCONNECT test_enable g237__5122/A  (0.062::0.062) (0.062::0.062))
+	(INTERCONNECT test_enable g239__8246/A  (0.061::0.061) (0.061::0.061))
+	(INTERCONNECT test_enable g240__7098/A  (0.062::0.062) (0.062::0.062))
+	(INTERCONNECT test_enable g241__6131/A  (0.006::0.006) (0.006::0.006))
+	(INTERCONNECT test_enable test_pad/PAD  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT cpu_clk_pad/PAD cpu_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g184__4319/Y cpu_clk_pad/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g184__4319/Y cpu_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT sram_clk_pad/PAD sram_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g181__2398/Y sram_clk_pad/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g181__2398/Y sram_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT gpio_clk_pad/PAD gpio_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g185__8428/Y gpio_clk_pad/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g185__8428/Y gpio_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT timer_clk_pad/PAD timer_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g182__5107/Y timer_clk_pad/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g182__5107/Y timer_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT uart_clk_pad/PAD uart_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g183__6260/Y uart_clk_pad/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g183__6260/Y uart_clk  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT wake_ff_reg\[1\]/Q g242/A  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT wake_ff_reg\[1\]/Q wake_sync_pad/A  (0.026::0.026) (0.025::0.025))
+	(INTERCONNECT wake_ff_reg\[1\]/Q wake_sync  (0.026::0.026) (0.025::0.025))
+	(INTERCONNECT wake_ff_reg\[0\]/Q FE_OFC8_wake_ff_0/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT cpu_en_latched_reg/Q g184__4319/B  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT gpio_en_latched_reg/Q g185__8428/B  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT g242/Y FE_OCPC22_n_1/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g242/Y FE_PSBC23_n_1/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g241__6131/Y FE_OFC17_n_2/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g240__7098/Y FE_OFC15_n_3/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g239__8246/Y FE_OFC4_n_4/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g237__5122/Y FE_OFC16_n_5/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g236__1705/Y FE_OFC14_n_6/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g235__2802/Y uart_en_latched_reg/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g234__1617/Y timer_en_latched_reg/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g233__3680/Y sram_en_latched_reg/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT g232__6783/Y gpio_en_latched_reg/D  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT sram_en_latched_reg/Q g181__2398/B  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT timer_en_latched_reg/Q g182__5107/B  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT uart_en_latched_reg/Q g183__6260/B  (0.008::0.008) (0.008::0.008))
+	(INTERCONNECT se_pad/Y se_pad/PAD  (0.011::0.011) (0.011::0.011))
+	(INTERCONNECT scanin_pad/Y scanin_pad/PAD  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT dft_sdi_pad/Y dft_sdi_pad/PAD  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT scanout_pad/PAD scanout_pad/A  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT dft_sdo_pad/PAD dft_sdo_pad/A  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CLKINVX20")
+    (INSTANCE  FE_PSBC23_n_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.115::0.115) (0.133::0.133))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CLKINVX20")
+    (INSTANCE  FE_PSBC22_n_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.064::0.064) (0.060::0.060))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CLKINVX20")
+    (INSTANCE  FE_PSBC21_n_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.064::0.064) (0.061::0.061))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CLKINVX6")
+    (INSTANCE  FE_OCPC22_n_1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.117::0.117) (0.144::0.144))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CLKINVX8")
+    (INSTANCE  FE_OFC9_n_1_dup)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.060::0.060) (0.066::0.066))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NAND2X4")
+    (INSTANCE  FE_RC_0_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.066::0.066) (0.086::0.086))
+	(IOPATH B Y  (0.045::0.045) (0.061::0.061))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CLKBUFX6")
+    (INSTANCE  FE_OFC17_n_2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.103::0.103) (0.099::0.099))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CLKBUFX20")
+    (INSTANCE  FE_OFC16_n_5)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.126::0.126) (0.109::0.109))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFX12")
+    (INSTANCE  FE_OFC15_n_3)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.124::0.124) (0.120::0.120))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFX12")
+    (INSTANCE  FE_OFC14_n_6)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.122::0.122) (0.117::0.117))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "BUFX2")
+    (INSTANCE  FE_OFC8_wake_ff_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.143::0.143) (0.147::0.147))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CLKBUFX20")
+    (INSTANCE  FE_OFC4_n_4)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.126::0.126) (0.109::0.109))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFFRHQX1")
+    (INSTANCE  wake_ff_reg\[0\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH RN Q  () (0.087::0.087))
+	(IOPATH (posedge CK) Q  (0.281::0.281) (0.252::0.252))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge RN) (0.189::0.189))
+	(RECREM (posedge RN) (posedge CK) (-0.102::-0.102) (0.158::0.158))
+	(SETUPHOLD (posedge D) (posedge CK) (0.084::0.084) (-0.039::-0.039))
+	(SETUPHOLD (negedge D) (posedge CK) (0.002::0.002) (0.068::0.068))
+	(WIDTH (posedge CK) (0.294::0.294))
+	(WIDTH (negedge CK) (0.304::0.304))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "AND2XL")
+    (INSTANCE  g181__2398)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.000::0.000) (0.000::0.000))
+	(IOPATH B Y  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "AND2XL")
+    (INSTANCE  g182__5107)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.000::0.000) (0.000::0.000))
+	(IOPATH B Y  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "AND2XL")
+    (INSTANCE  g183__6260)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.000::0.000) (0.000::0.000))
+	(IOPATH B Y  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "AND2XL")
+    (INSTANCE  g184__4319)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.000::0.000) (0.000::0.000))
+	(IOPATH B Y  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "AND2XL")
+    (INSTANCE  g185__8428)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.000::0.000) (0.000::0.000))
+	(IOPATH B Y  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFFNSRX4")
+    (INSTANCE  cpu_en_latched_reg)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH RN QN  (0.471::0.471) ())
+	(IOPATH RN Q  () (0.465::0.465))
+	(IOPATH SN QN  (0.438::0.438) (0.277::0.277))
+	(IOPATH SN Q  (0.262::0.262) (0.432::0.432))
+	(IOPATH (negedge CKN) QN  (0.371::0.371) (0.368::0.368))
+	(IOPATH (negedge CKN) Q  (0.353::0.353) (0.365::0.365))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge SN) (posedge RN) (0.261::0.261) (-0.175::-0.175))
+	(WIDTH (negedge RN) (0.324::0.324))
+	(WIDTH (negedge SN) (0.114::0.114))
+	(RECREM (posedge SN) (negedge CKN) (0.027::0.027) (0.040::0.040))
+	(RECREM (posedge RN) (negedge CKN) (0.052::0.052) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (negedge CKN) (0.100::0.100) (0.038::0.038))
+	(SETUPHOLD (negedge D) (negedge CKN) (0.128::0.128) (-0.042::-0.042))
+	(WIDTH (posedge CKN) (0.330::0.330))
+	(WIDTH (negedge CKN) (0.339::0.339))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFFNSRX4")
+    (INSTANCE  gpio_en_latched_reg)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH RN QN  (0.471::0.471) ())
+	(IOPATH RN Q  () (0.452::0.452))
+	(IOPATH SN QN  (0.438::0.438) (0.277::0.277))
+	(IOPATH SN Q  (0.252::0.252) (0.419::0.419))
+	(IOPATH (negedge CKN) QN  (0.371::0.371) (0.368::0.368))
+	(IOPATH (negedge CKN) Q  (0.343::0.343) (0.352::0.352))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge SN) (posedge RN) (0.261::0.261) (-0.175::-0.175))
+	(WIDTH (negedge RN) (0.323::0.323))
+	(WIDTH (negedge SN) (0.114::0.114))
+	(RECREM (posedge SN) (negedge CKN) (0.027::0.027) (0.040::0.040))
+	(RECREM (posedge RN) (negedge CKN) (0.051::0.051) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (negedge CKN) (0.100::0.100) (0.038::0.038))
+	(SETUPHOLD (negedge D) (negedge CKN) (0.128::0.128) (-0.042::-0.042))
+	(WIDTH (posedge CKN) (0.330::0.330))
+	(WIDTH (negedge CKN) (0.339::0.339))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFFNSRX4")
+    (INSTANCE  sram_en_latched_reg)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH RN QN  (0.471::0.471) ())
+	(IOPATH RN Q  () (0.460::0.460))
+	(IOPATH SN QN  (0.438::0.438) (0.277::0.277))
+	(IOPATH SN Q  (0.257::0.257) (0.427::0.427))
+	(IOPATH (negedge CKN) QN  (0.371::0.371) (0.368::0.368))
+	(IOPATH (negedge CKN) Q  (0.349::0.349) (0.360::0.360))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge SN) (posedge RN) (0.261::0.261) (-0.175::-0.175))
+	(WIDTH (negedge RN) (0.324::0.324))
+	(WIDTH (negedge SN) (0.114::0.114))
+	(RECREM (posedge SN) (negedge CKN) (0.027::0.027) (0.040::0.040))
+	(RECREM (posedge RN) (negedge CKN) (0.052::0.052) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (negedge CKN) (0.099::0.099) (0.038::0.038))
+	(SETUPHOLD (negedge D) (negedge CKN) (0.127::0.127) (-0.041::-0.041))
+	(WIDTH (posedge CKN) (0.330::0.330))
+	(WIDTH (negedge CKN) (0.339::0.339))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFFNSRX4")
+    (INSTANCE  timer_en_latched_reg)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH RN QN  (0.470::0.470) ())
+	(IOPATH RN Q  () (0.441::0.446))
+	(IOPATH SN QN  (0.438::0.438) (0.277::0.277))
+	(IOPATH SN Q  (0.243::0.248) (0.409::0.414))
+	(IOPATH (negedge CKN) QN  (0.371::0.371) (0.368::0.368))
+	(IOPATH (negedge CKN) Q  (0.335::0.339) (0.342::0.347))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge SN) (posedge RN) (0.262::0.262) (-0.176::-0.176))
+	(WIDTH (negedge RN) (0.320::0.320))
+	(WIDTH (negedge SN) (0.114::0.114))
+	(RECREM (posedge SN) (negedge CKN) (0.027::0.027) (0.040::0.040))
+	(RECREM (posedge RN) (negedge CKN) (0.050::0.050) (-0.003::-0.003))
+	(SETUPHOLD (posedge D) (negedge CKN) (0.101::0.101) (0.038::0.038))
+	(SETUPHOLD (negedge D) (negedge CKN) (0.127::0.127) (-0.041::-0.041))
+	(WIDTH (posedge CKN) (0.330::0.330))
+	(WIDTH (negedge CKN) (0.339::0.339))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFFNSRX4")
+    (INSTANCE  uart_en_latched_reg)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH RN QN  (0.471::0.471) ())
+	(IOPATH RN Q  () (0.485::0.485))
+	(IOPATH SN QN  (0.438::0.438) (0.277::0.277))
+	(IOPATH SN Q  (0.277::0.277) (0.452::0.452))
+	(IOPATH (negedge CKN) QN  (0.371::0.371) (0.368::0.368))
+	(IOPATH (negedge CKN) Q  (0.368::0.368) (0.385::0.385))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge SN) (posedge RN) (0.261::0.261) (-0.175::-0.175))
+	(WIDTH (negedge RN) (0.324::0.324))
+	(WIDTH (negedge SN) (0.114::0.114))
+	(RECREM (posedge SN) (negedge CKN) (0.027::0.027) (0.040::0.040))
+	(RECREM (posedge RN) (negedge CKN) (0.052::0.052) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (negedge CKN) (0.098::0.098) (0.037::0.037))
+	(SETUPHOLD (negedge D) (negedge CKN) (0.128::0.128) (-0.042::-0.042))
+	(WIDTH (posedge CKN) (0.330::0.330))
+	(WIDTH (negedge CKN) (0.339::0.339))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NAND2X8")
+    (INSTANCE  g232__6783)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.056::0.056) (0.080::0.080))
+	(IOPATH B Y  (0.039::0.039) (0.058::0.058))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NAND2X6")
+    (INSTANCE  g233__3680)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.054::0.054) (0.078::0.078))
+	(IOPATH B Y  (0.039::0.039) (0.058::0.058))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NAND2X8")
+    (INSTANCE  g234__1617)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.064::0.064) (0.085::0.085))
+	(IOPATH B Y  (0.040::0.040) (0.058::0.058))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NAND2X6")
+    (INSTANCE  g235__2802)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.050::0.050) (0.072::0.072))
+	(IOPATH B Y  (0.044::0.044) (0.061::0.061))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NOR2X2")
+    (INSTANCE  g236__1705)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.088::0.088) (0.073::0.073))
+	(IOPATH B Y  (0.041::0.041) (0.025::0.025))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NOR2X2")
+    (INSTANCE  g237__5122)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.098::0.098) (0.078::0.078))
+	(IOPATH B Y  (0.052::0.052) (0.030::0.030))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "DFFRHQX1")
+    (INSTANCE  wake_ff_reg\[1\])
+      (DELAY
+	(ABSOLUTE
+	(IOPATH RN Q  () (0.741::0.741))
+	(IOPATH (posedge CK) Q  (0.833::0.833) (0.906::0.906))
+	)
+      )
+      (TIMINGCHECK
+	(WIDTH (negedge RN) (0.189::0.189))
+	(RECREM (posedge RN) (posedge CK) (-0.102::-0.102) (0.158::0.158))
+	(SETUPHOLD (posedge D) (posedge CK) (0.143::0.143) (-0.096::-0.096))
+	(SETUPHOLD (negedge D) (posedge CK) (0.067::0.067) (0.010::0.010))
+	(WIDTH (posedge CK) (0.294::0.294))
+	(WIDTH (negedge CK) (0.304::0.304))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NOR2X2")
+    (INSTANCE  g239__8246)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.099::0.099) (0.078::0.078))
+	(IOPATH B Y  (0.052::0.052) (0.030::0.030))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NOR2X2")
+    (INSTANCE  g240__7098)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.088::0.088) (0.073::0.073))
+	(IOPATH B Y  (0.041::0.041) (0.025::0.025))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "NOR2X2")
+    (INSTANCE  g241__6131)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.047::0.047) (0.030::0.030))
+	(IOPATH B Y  (0.036::0.036) (0.023::0.023))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "CLKINVX8")
+    (INSTANCE  g242)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A Y  (0.542::0.542) (0.500::0.500))
+	)
+      )
+  )
+)

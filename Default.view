@@ -1,0 +1,11 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name rc -cap_table {../../jakir/45nm_Library/captable/cln28hpl_1p10m+alrdl_5x2yu2yz_typical.capTbl} -T {125} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0} -qx_tech_file {../../jakir/45nm_Library/QRC_Tech/gpdk045.tch}
+create_library_set -name fast -timing {../../jakir/45nm_Library/lib/fast_vdd1v0_basicCells.lib}
+create_library_set -name slow -timing {../../jakir/45nm_Library/lib/slow_vdd1v0_basicCells.lib}
+create_constraint_mode -name sdc -sdc_files {soccon_constraint_tool.sdc}
+create_delay_corner -name min -library_set {fast} -rc_corner {rc}
+create_delay_corner -name max -library_set {slow} -rc_corner {rc}
+create_analysis_view -name worst -constraint_mode {sdc} -delay_corner {max}
+create_analysis_view -name best -constraint_mode {sdc} -delay_corner {min}
+set_analysis_view -setup {worst} -hold {best}

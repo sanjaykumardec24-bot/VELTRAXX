@@ -48,5 +48,30 @@ module low_power_soc(clk, rst_n, cpu_enable, sram_enable, gpio_enable,
   NOR2X1 g240__7098(.A (test_enable), .B (timer_enable), .Y (n_3));
   NOR2X1 g241__6131(.A (test_enable), .B (uart_enable), .Y (n_2));
   INVX1 g242(.A (wake_sync), .Y (n_1));
+// INPUTS
+PADDI clk_pad       (.PAD(clk),          .Y(clk));
+PADDI rstn_pad      (.PAD(rst_n),        .Y(rst_n));
+
+PADDI cpu_en_pad    (.PAD(cpu_enable),   .Y(cpu_enable));
+PADDI sram_en_pad   (.PAD(sram_enable),  .Y(sram_enable));
+PADDI gpio_en_pad   (.PAD(gpio_enable),  .Y(gpio_enable));
+PADDI timer_en_pad  (.PAD(timer_enable), .Y(timer_enable));
+PADDI uart_en_pad   (.PAD(uart_enable),  .Y(uart_enable));
+
+PADDI wake_pad      (.PAD(async_wakeup), .Y(async_wakeup));
+PADDI test_pad      (.PAD(test_enable),  .Y(test_enable));
+PADDI se_pad        (.PAD(SE),            .Y(SE));
+PADDI scanin_pad    (.PAD(scan_in),       .Y(scan_in));
+PADDI dft_sdi_pad   (.PAD(dft_sdi_1),     .Y(dft_sdi_1));
+// OUTPUTS
+PADDO cpu_clk_pad   (.A(cpu_clk),   .PAD(cpu_clk));
+PADDO sram_clk_pad  (.A(sram_clk),  .PAD(sram_clk));
+PADDO gpio_clk_pad  (.A(gpio_clk),  .PAD(gpio_clk));
+PADDO timer_clk_pad (.A(timer_clk), .PAD(timer_clk));
+PADDO uart_clk_pad  (.A(uart_clk),  .PAD(uart_clk));
+
+PADDO wake_sync_pad (.A(wake_sync), .PAD(wake_sync));
+PADDO scanout_pad   (.A(scan_out),  .PAD(scan_out));
+PADDO dft_sdo_pad   (.A(dft_sdo_1), .PAD(dft_sdo_1));
 endmodule
 
