@@ -1,0 +1,131 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Aug 29, 2026 at 09:51:33 IST
+irun
+	-sv
+	low_power_pkg.sv
+	low_power_if.sv
+	low_power_soc.sv
+	tb_low_power_soc.sv
+	-access +rwc
+	-gui
+	-coverage all
+file: low_power_pkg.sv
+	package worklib.low_power_pkg:sv
+		errors: 0, warnings: 0
+file: low_power_if.sv
+	interface worklib.low_power_if:sv
+		errors: 0, warnings: 0
+file: low_power_soc.sv
+	module worklib.low_power_soc:sv
+		errors: 0, warnings: 0
+file: tb_low_power_soc.sv
+	module worklib.tb_low_power_soc:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		low_power_pkg
+		tb_low_power_soc
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.low_power_soc
+		worklib.tb_low_power_soc
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.low_power_soc:sv <0x2d71c220>
+			streams:  36, words: 14735
+		worklib.tb_low_power_soc:sv <0x114bec50>
+			streams:  30, words: 129628
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Interfaces:              1       1
+		Verilog packages:        1       1
+		Registers:              39      39
+		Scalar wires:           32       -
+		Always blocks:          13      13
+		Initial blocks:          5       5
+		Cont. assignments:      11      11
+		Pseudo assignments:     15      15
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_low_power_soc:sv
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_low_power_soc.dut.async_wakeup tb_low_power_soc.dut.clk tb_low_power_soc.dut.clk_activity tb_low_power_soc.dut.cpu_activity tb_low_power_soc.dut.cpu_clk tb_low_power_soc.dut.cpu_en_latched tb_low_power_soc.dut.cpu_enable tb_low_power_soc.dut.cpu_gate_en tb_low_power_soc.dut.gpio_activity tb_low_power_soc.dut.gpio_clk tb_low_power_soc.dut.gpio_en_latched tb_low_power_soc.dut.gpio_enable tb_low_power_soc.dut.gpio_gate_en tb_low_power_soc.dut.rst_n tb_low_power_soc.dut.sram_activity tb_low_power_soc.dut.sram_clk tb_low_power_soc.dut.sram_en_latched tb_low_power_soc.dut.sram_enable tb_low_power_soc.dut.sram_gate_en tb_low_power_soc.dut.test_enable tb_low_power_soc.dut.timer_activity tb_low_power_soc.dut.timer_clk tb_low_power_soc.dut.timer_en_latched tb_low_power_soc.dut.timer_enable tb_low_power_soc.dut.timer_gate_en tb_low_power_soc.dut.uart_activity tb_low_power_soc.dut.uart_clk tb_low_power_soc.dut.uart_en_latched tb_low_power_soc.dut.uart_enable tb_low_power_soc.dut.uart_gate_en tb_low_power_soc.dut.wake_ff tb_low_power_soc.dut.wake_sync
+Created probe 1
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+
+================================================
+ LOW POWER CLOCK GATING CONTROLLER
+ COMPLETE COVERAGE TEST
+================================================
+Clock Frequency = 100 MHz
+Clock Period    = 10 ns
+================================================
+
+==============================================
+RESET TEST
+==============================================
+PASS: Reset assertion/deassertion covered
+
+==============================================
+TEST 1 : ALL CLOCKS OFF
+==============================================
+PASS: All clocks OFF
+
+==============================================
+TEST 2 : CPU CLOCK
+==============================================
+PASS: CPU enable 0->1->0 covered
+
+==============================================
+TEST 3 : PERIPHERAL CLOCKS
+==============================================
+PASS: Peripheral enables covered
+
+==============================================
+TEST 4 : ASYNCHRONOUS WAKE-UP
+==============================================
+PASS: Wake-up assertion and deassertion covered
+
+==============================================
+TEST 5 : TEST / SCAN
+==============================================
+PASS: Test enable 0->1->0 covered
+
+==============================================
+TEST 6 : COUNTER TOGGLE COVERAGE
+==============================================
+Running 520 clock cycles for activity counters...
+PASS: All activity counter bits exercised
+
+==============================================
+TEST 7 : INDIVIDUAL GATING
+==============================================
+PASS: Individual gating covered
+
+==============================================
+SECOND RESET COVERAGE
+==============================================
+PASS: Second asynchronous reset covered
+
+================================================
+ ALL COVERAGE TESTS COMPLETED
+================================================
+Simulation complete via $finish(1) at time 6865 NS + 0
+./tb_low_power_soc.sv:860         $finish;
+ncsim> ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+TOOL:	irun(64)	15.20-s086: Exiting on Aug 29, 2026 at 09:53:10 IST  (total: 00:01:37)

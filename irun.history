@@ -1,0 +1,12 @@
+s1(28Aug2026:22:39:58):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s2(28Aug2026:22:47:42):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s3(28Aug2026:22:52:36):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s4(28Aug2026:22:53:27):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s5(28Aug2026:23:02:55):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s6(28Aug2026:23:04:33):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s7(28Aug2026:23:08:58):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s8(28Aug2026:23:13:30):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s9(28Aug2026:23:21:50):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s10(28Aug2026:23:26:10):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s11(28Aug2026:23:31:25):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
+s12(29Aug2026:09:51:33):  irun -sv low_power_pkg.sv low_power_if.sv low_power_soc.sv tb_low_power_soc.sv -access +rwc -gui -coverage all 
