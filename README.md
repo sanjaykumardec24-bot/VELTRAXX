@@ -1,154 +1,116 @@
+````markdown
 # VELTRAXX'26 – PS 01
 
 ## Low-Power Clock Gating Controller for Mobile SoC
 
-### 📌 Project Overview
+### Problem Statement
 
-This project implements a **Low-Power Clock Gating Controller for a Mobile SoC** using synthesizable SystemVerilog RTL.
+Design and verification of a low-power clock gating controller for a mobile SoC.
 
-The design selectively enables or disables the clock supplied to different functional blocks based on their enable requests. It also supports **asynchronous wake-up handling**, **test/scan enable**, and **glitch-free clock gating**.
+The objective of this project is to reduce unnecessary dynamic power consumption by disabling the clock supplied to inactive functional blocks. The design also handles asynchronous wake-up requests and provides safe clock gating and ungating operation.
 
 **Focused Domain:** RTL-to-GDSII (ASIC Flow)
 
 ---
 
-## 🎯 Objectives
+## Project Overview
 
-* Reduce dynamic power by disabling clocks to inactive functional blocks.
-* Implement safe and synthesizable clock-gating logic.
-* Support multiple SoC functional blocks.
-* Handle asynchronous wake-up requests through synchronization.
-* Prevent clock glitches and runt pulses during gating and ungating.
-* Provide test/scan enable functionality.
-* Verify clock-gating behavior through simulation.
-* Evaluate the design for ASIC synthesis and timing closure.
+In a mobile SoC, different functional blocks may not be active at the same time. If the clock continues to operate for inactive blocks, unnecessary switching activity occurs and dynamic power is consumed.
 
----
+This project implements a clock gating controller that provides individual gated clocks for multiple functional blocks.
 
-## 🏗️ Functional Blocks
+The current design supports:
 
-The current RTL design supports clock gating for five functional blocks:
+- CPU
+- SRAM
+- GPIO
+- Timer
+- UART
 
-| Functional Block | Enable Input   | Gated Clock |
-| ---------------- | -------------- | ----------- |
-| CPU              | `cpu_enable`   | `cpu_clk`   |
-| SRAM             | `sram_enable`  | `sram_clk`  |
-| GPIO             | `gpio_enable`  | `gpio_clk`  |
-| Timer            | `timer_enable` | `timer_clk` |
-| UART             | `uart_enable`  | `uart_clk`  |
-
-Additional control signals:
-
-* `async_wakeup` – asynchronous peripheral wake-up request
-* `test_enable` – test/scan clock enable
-* `rst_n` – active-low reset
-* `clk` – global clock
+The design also supports asynchronous wake-up and test/scan enable functionality.
 
 ---
 
-## 🔧 Design Architecture
+## Objectives
 
-```text
-                         +----------------+
-                         |   Global Clock |
-                         |      clk       |
-                         +-------+--------+
-                                 |
-              +------------------+------------------+
-              |                  |                  |
-              v                  v                  v
-       +-------------+    +-------------+    +-------------+
-       | Wake-Up     |    | Functional  |    | Test/Scan   |
-       | Synchronizer|    | Enables     |    | Enable      |
-       +------+------+    +------+------+    +------+------+
-              |                  |                  |
-              +------------------+------------------+
-                                 |
-                                 v
-                    +-------------------------+
-                    | Clock Gate Enable      |
-                    | Generation             |
-                    +-----------+-------------+
-                                |
-                    +-----------+-----------+
-                    |           |           |
-                    v           v           v
-                CPU Gate    SRAM Gate    GPIO Gate
-                    |           |           |
-                    v           v           v
-                 CPU CLK     SRAM CLK    GPIO CLK
-
-                    +-----------+-----------+
-                                |
-                         Timer / UART Gates
-                                |
-                         Timer CLK / UART CLK
-```
+- Reduce unnecessary clock switching activity.
+- Reduce dynamic power consumption.
+- Provide individual clock control for SoC functional blocks.
+- Safely handle asynchronous wake-up requests.
+- Generate glitch-free gated clock signals.
+- Support test/scan enable operation.
+- Implement synthesizable SystemVerilog RTL.
+- Verify the design using a testbench.
+- Perform synthesis and timing analysis as part of the ASIC flow.
 
 ---
 
-## ⚙️ Working Principle
+## Design Features
 
-### 1. Functional Enable Control
-
-Each SoC block has an individual enable signal:
-
-```text
-cpu_enable
-sram_enable
-gpio_enable
-timer_enable
-uart_enable
-```
-
-The corresponding clock is enabled when the functional block requires operation.
+- Individual clock gating for CPU, SRAM, GPIO, Timer and UART.
+- Asynchronous wake-up synchronizer.
+- Parameterized synchronizer stages.
+- Negative-edge based clock-enable latching.
+- Gated clock generation.
+- Test/scan enable support.
+- Activity counters for observing clock activity.
+- Active-low reset.
+- Synthesizable SystemVerilog RTL.
 
 ---
 
-### 2. Asynchronous Wake-Up Synchronization
+## Functional Blocks
 
-The `async_wakeup` signal is asynchronous to the main clock.
-
-A configurable multi-stage synchronizer is used:
-
-```text
-async_wakeup
-     |
-     v
-+----------+
-| Wake FF  |
-| Stage 1  |
-+----+-----+
-     |
-     v
-+----------+
-| Wake FF  |
-| Stage 2  |
-+----+-----+
-     |
-     v
- wake_sync
-```
-
-The number of synchronization stages is controlled by:
-
-```systemverilog
-parameter int SYNC_STAGES = 2
-```
-
-The synchronized wake-up signal is then used to enable the clocks safely.
+| Functional Block | Enable Signal | Gated Clock |
+|---|---|---|
+| CPU | `cpu_enable` | `cpu_clk` |
+| SRAM | `sram_enable` | `sram_clk` |
+| GPIO | `gpio_enable` | `gpio_clk` |
+| Timer | `timer_enable` | `timer_clk` |
+| UART | `uart_enable` | `uart_clk` |
 
 ---
 
-## 🔐 Clock Gate Enable Logic
+## Inputs
 
-For each functional block, the final gate enable is generated using:
+| Signal | Description |
+|---|---|
+| `clk` | Global system clock |
+| `rst_n` | Active-low reset |
+| `cpu_enable` | CPU clock enable |
+| `sram_enable` | SRAM clock enable |
+| `gpio_enable` | GPIO clock enable |
+| `timer_enable` | Timer clock enable |
+| `uart_enable` | UART clock enable |
+| `async_wakeup` | Asynchronous wake-up request |
+| `test_enable` | Test/scan enable |
+
+---
+
+## Outputs
+
+| Signal | Description |
+|---|---|
+| `cpu_clk` | Gated CPU clock |
+| `sram_clk` | Gated SRAM clock |
+| `gpio_clk` | Gated GPIO clock |
+| `timer_clk` | Gated Timer clock |
+| `uart_clk` | Gated UART clock |
+| `wake_sync` | Synchronized wake-up signal |
+
+---
+
+## Clock Gating Operation
+
+The clock enable for each functional block is generated using the corresponding functional enable, synchronized wake-up signal and test enable.
+
+The general control logic is:
 
 ```text
 Gate Enable = Functional Enable OR Wake-Up OR Test Enable
-```
+````
 
-For example:
+For example, the CPU clock gate enable is generated as:
 
 ```systemverilog
 assign cpu_gate_en =
@@ -157,13 +119,35 @@ assign cpu_gate_en =
         test_enable;
 ```
 
-The same control scheme is applied to SRAM, GPIO, Timer, and UART.
+The same control method is used for SRAM, GPIO, Timer and UART.
 
 ---
 
-## 🕒 Glitch-Free Clock Gating
+## Asynchronous Wake-Up
 
-The clock enable is captured on the **negative edge** of the main clock.
+The `async_wakeup` signal is asynchronous to the main system clock.
+
+A configurable multi-stage synchronizer is used to synchronize the wake-up signal.
+
+The number of synchronization stages is controlled using:
+
+```systemverilog
+parameter int SYNC_STAGES = 2
+```
+
+The synchronized wake-up signal is available through:
+
+```text
+wake_sync
+```
+
+The synchronized signal is then used for clock enable generation.
+
+---
+
+## Glitch-Free Clock Gating
+
+The clock enable signals are latched on the negative edge of the main clock before generating the gated clock.
 
 Example:
 
@@ -176,140 +160,90 @@ always_ff @(negedge clk or negedge rst_n) begin
 end
 ```
 
-The gated clock is then generated as:
+The gated clock is generated using:
 
 ```systemverilog
 assign cpu_clk = clk & cpu_en_latched;
 ```
 
-Capturing the enable on the falling edge prevents the enable signal from changing during the active high phase of the clock.
+The same approach is applied to the other functional blocks.
 
-This architecture is intended to provide safe clock gating without glitches or runt pulses.
+This approach is used to avoid unwanted clock glitches and runt pulses during clock gating.
 
 ---
 
-## 📊 Activity Monitoring
+## Activity Monitoring
 
-The RTL also contains activity counters for:
+The design contains activity counters for the global clock and individual functional blocks.
 
-* Global clock
+The counters are used during simulation to observe the clock activity of each block.
+
+Activity monitoring is provided for:
+
 * CPU
 * SRAM
 * GPIO
 * Timer
 * UART
 
-These counters can be used during simulation to observe whether a functional block is receiving clock activity.
+---
 
-For example:
+## Verification
 
-```systemverilog
-if (cpu_clk)
-    cpu_activity <= cpu_activity + 8'h01;
-```
+The verification environment contains SystemVerilog testbench files for checking the clock gating controller.
 
-When the CPU clock is gated, CPU clock activity stops increasing.
+The verification covers:
+
+* Reset operation
+* Clock enable operation
+* Clock disable operation
+* Individual functional block clock gating
+* Multiple block enable operation
+* Asynchronous wake-up
+* Test/scan enable
+* Gated clock behavior
+* Activity counter behavior
+* Boundary and corner cases
+
+Waveform analysis will be used to verify clock transitions and gating behavior.
 
 ---
 
-## ⚡ Power-Saving Concept
+## PS01 Requirements
+
+The project is developed according to the requirements of VELTRAXX'26 PS01.
+
+| Requirement              | Target          |
+| ------------------------ | --------------- |
+| Asynchronous Wake-Up     | Supported       |
+| Glitch-Free Clock Gating | Required        |
+| Runt Pulses              | Not allowed     |
+| Duty-Cycle Distortion    | < 5%            |
+| Gating/Ungating Latency  | ≤ 1 clock cycle |
+| Setup Violations         | 0               |
+| Hold Violations          | 0               |
+| Negative Slack           | 0               |
+
+---
+
+## Repository Structure
 
 ```text
-Functional Block Active
-        |
-        v
-   Clock Enabled
-        |
-        v
-   Normal Operation
-
-
-Functional Block Inactive
-        |
-        v
-    Clock Gated
-        |
-        v
- Reduced Clock Switching
-        |
-        v
-   Dynamic Power Saving
-```
-
-The main objective is to reduce unnecessary **dynamic power caused by clock switching** in inactive SoC blocks.
-
----
-
-## 🧪 Verification Plan
-
-The design should be verified using a self-checking testbench.
-
-### Test Cases
-
-1. Reset operation
-2. CPU clock enable
-3. CPU clock disable
-4. SRAM clock enable/disable
-5. GPIO clock enable/disable
-6. Timer clock enable/disable
-7. UART clock enable/disable
-8. Multiple functional blocks enabled simultaneously
-9. Asynchronous wake-up event
-10. Test/scan enable
-11. Clock gating during enable transitions
-12. Glitch-free clock verification
-13. Runt-pulse verification
-14. Activity-counter verification
-15. Boundary and corner-case testing
-
----
-
-## 📈 PS01 Design Requirements
-
-The implementation is targeted to satisfy the official PS01 constraints:
-
-| Requirement             |      Target |
-| ----------------------- | ----------: |
-| Asynchronous Wake-Up    |   Supported |
-| Glitch-Free Operation   |    Required |
-| Runt Pulses             | Not allowed |
-| Duty-Cycle Distortion   |        < 5% |
-| Gating/Ungating Latency |   ≤ 1 cycle |
-| Setup Violations        |           0 |
-| Hold Violations         |           0 |
-| Negative Slack          |           0 |
-
-These requirements are specified in the official VELTRAXX'26 PS01 problem statement.
-
----
-
-## 💻 Tools & Technologies
-
-* **HDL:** SystemVerilog
-* **Simulation:** Cadence Xcelium
-* **Waveform Analysis:** Cadence Xcelium / GTKWave
-* **Synthesis:** Cadence Genus
-* **Static Timing Analysis:** Cadence Tempus
-* **Constraints:** SDC
-* **Version Control:** Git & GitHub
-
----
-
-## 📁 Repository Structure
-
-```text
-PS01-Clock-Gating-Controller/
+VELTRAXX/
 │
 ├── README.md
 │
 ├── src/
-│   └── low_power_soc.sv
+│   ├── clock_gating_controller.sv
+│   └── design.sv
 │
 ├── tb/
-│   └── tb_low_power_soc.sv
+│   ├── interface.sv
+│   ├── pkg.sv
+│   ├── tb.sv
+│   └── tb_clock_gating_controller.sv
 │
 ├── constraints/
-│   └── clock_gating.sdc
 │
 ├── scripts/
 │   ├── simulation/
@@ -325,84 +259,216 @@ PS01-Clock-Gating-Controller/
 │   └── timing_reports/
 │
 ├── docs/
-│   ├── block_diagram/
-│   ├── architecture/
-│   └── final_report/
 │
 └── presentation/
-    └── VELTRAXX26_PS01_Presentation.pptx
 ```
 
 ---
 
-## 📄 RTL Source
+## Source Files
 
-The main RTL implementation is located at:
+### `src/clock_gating_controller.sv`
+
+Contains the main clock gating controller RTL implementation.
+
+### `src/design.sv`
+
+Contains the supporting design-level RTL used in the project.
+
+---
+
+## Testbench Files
+
+The verification files are maintained under the `tb` directory.
+
+### `tb/interface.sv`
+
+Contains the interface definitions used by the verification environment.
+
+### `tb/pkg.sv`
+
+Contains the package definitions used by the testbench.
+
+### `tb/tb.sv`
+
+Contains the main testbench environment.
+
+### `tb/tb_clock_gating_controller.sv`
+
+Contains the testbench for the clock gating controller.
+
+---
+
+## Tools Used
+
+* SystemVerilog
+* Cadence Xcelium
+* GTKWave
+* Cadence Genus
+* Cadence Tempus
+* SDC
+* Git
+* GitHub
+
+---
+
+## ASIC Flow
+
+The project follows the basic RTL-to-GDSII flow:
 
 ```text
-src/low_power_soc.sv
-```
-
-The module is:
-
-```systemverilog
-module low_power_soc
-```
-
-The design is parameterized using:
-
-```systemverilog
-parameter int SYNC_STAGES = 2
+RTL Design
+    |
+    v
+Functional Verification
+    |
+    v
+Simulation
+    |
+    v
+Synthesis
+    |
+    v
+Static Timing Analysis
+    |
+    v
+Area / Power Analysis
 ```
 
 ---
 
-## 📦 Required Deliverables
+## Output Directory
 
-The final repository will contain:
+Simulation and implementation results will be maintained under the `outputs` directory.
 
-* Parameterized synthesizable RTL
-* Self-checking verification testbench
-* Simulation waveform dumps
-* SDC constraint file
-* Synthesis scripts
-* Synthesis reports
-* Timing reports
-* Area reports
-* Documentation
-* Final presentation
+```text
+outputs/
+│
+├── waveforms/
+├── netlist/
+└── timing_reports/
+```
 
-The official PS01 specifically requires parameterized synthesizable RTL, comprehensive verification, waveform evidence, and synthesis/timing reports.
+### Waveforms
+
+Simulation waveform files will be stored under:
+
+```text
+outputs/waveforms/
+```
+
+### Netlist
+
+Synthesis-generated netlists will be stored under:
+
+```text
+outputs/netlist/
+```
+
+### Timing Reports
+
+Static timing analysis reports will be stored under:
+
+```text
+outputs/timing_reports/
+```
 
 ---
 
-## 🏆 Expected Outcome
+## Constraints
 
-The expected outcome is a robust **low-power clock-gating controller** suitable for mobile SoC applications.
+Timing constraints for the design will be maintained under:
 
-The completed design should demonstrate:
+```text
+constraints/
+```
+
+The SDC file will define the clock and timing requirements required for synthesis and static timing analysis.
+
+---
+
+## Scripts
+
+Automation scripts for simulation and synthesis will be maintained under:
+
+```text
+scripts/
+├── simulation/
+└── synthesis/
+```
+
+---
+
+## Logs
+
+Execution logs will be maintained separately for simulation and synthesis.
+
+```text
+logs/
+├── simulation/
+└── synthesis/
+```
+
+---
+
+## Current Status
+
+* [x] Project repository created
+* [x] README added
+* [x] RTL source files added
+* [x] Testbench files added
+* [ ] Functional simulation
+* [ ] Waveform verification
+* [ ] SDC constraints
+* [ ] RTL synthesis
+* [ ] Synthesis reports
+* [ ] Static timing analysis
+* [ ] Timing reports
+* [ ] Area analysis
+* [ ] Power analysis
+
+---
+
+## Expected Outcome
+
+The final implementation is expected to demonstrate a functional low-power clock gating controller capable of safely controlling the clocks of multiple mobile SoC functional blocks.
+
+The completed project will be evaluated for:
 
 * Correct clock gating
 * Correct clock ungating
-* Safe asynchronous wake-up handling
-* Glitch-free clock operation
-* Reduced unnecessary clock switching
-* Correct operation of multiple functional blocks
-* Successful RTL simulation
-* Successful synthesis
-* Timing closure with zero negative slack
+* Asynchronous wake-up handling
+* Glitch-free operation
+* Runt-pulse prevention
+* Duty-cycle integrity
+* Gating and ungating latency
+* Timing closure
+* Area
+* Power consumption
 
 ---
 
-## 👥 Project Information
+## Problem Statement
 
-**Event:** VELTRAXX'26
-**Problem Statement:** PS 01
-**Project:** Low-Power Clock Gating Controller for Mobile SoC
+**VELTRAXX'26 – Problem Statement 01**
+
+**Title:** Low-Power Clock Gating Controller for Mobile SoC
+
 **Domain:** RTL-to-GDSII (ASIC Flow)
 
 ---
 
-## 📜 License
+## Team
 
-Developed as part of the VELTRAXX'26 technical challenge.
+**VELTRAXX'26 – PS 01**
+
+Low-Power Clock Gating Controller for Mobile SoC
+
+---
+
+## License
+
+This project is developed as part of the VELTRAXX'26 technical challenge.
+
+```
+```
