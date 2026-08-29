@@ -1,0 +1,32 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN low_power_soc ;
+
+SCANCHAINS 2 ;
+  - top_chain_seg1_clk_falling 
+    + PARTITION p_clk_falling 
+      MAXBITS 5
+    + START PIN scan_in
+    + FLOATING 
+       cpu_en_latched_reg ( IN SI ) ( OUT QN ) 
+       gpio_en_latched_reg ( IN SI ) ( OUT QN ) 
+       sram_en_latched_reg ( IN SI ) ( OUT QN ) 
+       timer_en_latched_reg ( IN SI ) ( OUT QN ) 
+       uart_en_latched_reg ( IN SI ) ( OUT QN ) 
+    + STOP PIN scan_out
+;
+
+  - AutoChain_1_seg1_clk_rising 
+    + PARTITION p_clk_rising 
+      MAXBITS 2
+    + START PIN dft_sdi_1
+    + FLOATING 
+       wake_ff_reg[0] ( IN SI ) ( OUT Q ) 
+       wake_ff_reg[1] ( IN SI ) ( OUT Q ) 
+    + STOP PIN dft_sdo_1
+;
+
+END SCANCHAINS 
+END DESIGN 
